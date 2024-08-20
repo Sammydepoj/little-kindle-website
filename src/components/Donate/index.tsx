@@ -6,7 +6,7 @@ const Donate = () => {
   return (
     <div className="rounded-2xl bg-[#215890] p-8 py-16">
       <h4 className="text-center text-[#1A1A1A] mx-auto font-semibold text-4xl max-w-[800px]">
-        Donate Now to Elevate Children's Lives in Need
+        Donate Now to Elevate Children&apos;s Lives in Need
       </h4>
       <p className="text-[#EBEBEB] mx-auto my-6 text-center font-normal max-w-[800px]">
         Your generosity can change lives by providing essential resources like

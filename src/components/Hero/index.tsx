@@ -32,7 +32,7 @@ const Hero = () => {
       <Image alt="" src={HeroImage} className="-z-30" />
       <div className="bg-[#F7F7F8] py-8 px-11 rounded-2xl max-w-[980px] mx-auto mt-[-6rem] z-[10000] relative">
         <h1 className="text-[#1A1A1A] font-semibold text-5xl text-center ">
-          Igniting the Spark of Education for Africa's Children
+          Igniting the Spark of Education for Africa&apos;s Children
         </h1>
         <p className="text-base text-[#4C4C4D] font-normal text-center my-8">
           Empowering underserved children in Africa through education. Since
@@ -76,13 +76,13 @@ const Hero = () => {
       </div>
       <div className="my-12">
         <h2 className="text-[#1A1A1A] my-4 font-semibold text-4xl mx-auto w-max">
-          Cherishing Every Child's Potential
+          Cherishing Every Child&apos;s Potential
         </h2>
         <p className="text-[#4C4C4D] text-base  max-w-[980px] mx-auto text-center">
           At Little Kindles Africa, we believe that every child is unique and
-          deserving of the opportunity to shine. Our mantra, "Every child is
-          special," drives our commitment to providing tailored support and
-          resources to empower each child's educational journey.
+          deserving of the opportunity to shine. Our mantra, &quot;Every child
+          is special,&quot; drives our commitment to providing tailored support
+          and resources to empower each child&apos;s educational journey.
         </p>
       </div>
       <div className="flex items-center gap-3 bg-[#F1F1F3] w-max mx-auto py-2 font-normal px-3 rounded-[100px] text-white ">
