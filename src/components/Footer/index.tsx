@@ -11,9 +11,9 @@ import LinkedInIcon from "@/assets/icons/LinkedIn";
 const Footer = () => {
   return (
     <footer className="mt-24">
-      <Image src={logo} alt="" className="mb-20" />
-      <div className="flex  justify-between items-center border-b">
-        <div className="flex items-center gap-8">
+      <Image src={logo} alt="" className="md:mb-20" />
+      <div className="flex  justify-between items-center flex-wrap gap-4 border-b">
+        <div className="flex items-center flex-wrap gap-8">
           <Link href={"/"} className="text-[#4C4C4D] font-normal">
             Home
           </Link>
@@ -33,8 +33,8 @@ const Footer = () => {
             Event Updates
           </Link>
         </div>
-        <div className="border rounded-tl-2xl rounded-tr-2xl p-3 flex items-center gap-8">
-          <div className="grid gap-4">
+        <div className="border rounded-tl-2xl rounded-tr-2xl p-3 flex flex-wrap justify-center items-center gap-8">
+          <div className="grid place-items-center gap-4">
             <p>Would love to donate?</p>
             <div className="flex items-center gap-3 mx-auto bg-[#001F3F] py-2 font-normal px-3 rounded-[100px] text-white ">
               <button className="">Donate Now</button>
@@ -43,14 +43,14 @@ const Footer = () => {
               </span>
             </div>
           </div>
-          <div className="grid gap-4">
+          <div className="grid place-items-center gap-4">
             <p>Want to collaborate with us?</p>
             <div className="flex items-center gap-3 w-max mx-auto bg-[#001F3F] py-2 font-normal px-3 rounded-[100px] text-white ">
               <button className="">Reach Us</button>
               <EmailIcon />
             </div>
           </div>
-          <div className="grid gap-4">
+          <div className="grid place-items-center gap-4">
             <p>Follow Our Socials</p>
             <div className="flex items-center gap-3 mx-auto bg-[#001F3F] py-2 font-normal px-3 rounded-[100px] text-white ">
               <button className="">
@@ -66,7 +66,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-[#4C4C4D] my-8 w-max mx-auto">
+      <p className="text-[#4C4C4D] my-8 text-center mx-auto">
         © 2024 LittleKindles Africa. All rights reserved.
       </p>
     </footer>

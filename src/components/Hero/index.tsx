@@ -30,18 +30,18 @@ const Hero = () => {
   return (
     <div className="my-4">
       <Image alt="" src={HeroImage} className="-z-30" />
-      <div className="bg-[#F7F7F8] py-8 px-11 rounded-2xl max-w-[980px] mx-auto mt-[-6rem] z-[10000] relative">
-        <h1 className="text-[#1A1A1A] font-semibold text-5xl text-center ">
+      <div className="bg-[#F7F7F8] p-2 md:py-8 md:px-11 rounded-2xl max-w-[980px] mx-auto mt-[-2%]  sm:mt-[-5%] z-[90] relative">
+        <h1 className="text-[#1A1A1A] font-semibold text-2xl sm:text-3xl md:text-5xl text-center ">
           Igniting the Spark of Education for Africa&apos;s Children
         </h1>
-        <p className="text-base text-[#4C4C4D] font-normal text-center my-8">
+        <p className="text-base text-[#4C4C4D] font-normal text-center my-3 md:my-8">
           Empowering underserved children in Africa through education. Since
           2014, Little Kindles Africa has reached over 3,000 children in Lagos,
           Oyo, and Ogun States. Join us in our mission to provide essential
           educational resources and support. Together, we can create a brighter
           future for every child.
         </p>
-        <div className="mx-auto flex items-center gap-8 w-max">
+        <div className="mx-auto flex items-center flex-wrap gap-8 md:w-max">
           <CustomButton
             text="Learn More"
             icon={<ArrowIcon stroke="#3A5774" />}
@@ -59,7 +59,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="my-20">
-        <h2 className="text-[#1A1A1A] my-4 font-semibold text-4xl mx-auto w-max">
+        <h2 className="text-[#1A1A1A] my-4 font-semibold text-2xl md:text-4xl mx-auto text-center md:w-max">
           Make a Difference Through Education
         </h2>
         <p className="text-[#4C4C4D] text-base  max-w-[980px] mx-auto text-center">
@@ -69,13 +69,13 @@ const Hero = () => {
           success.
         </p>
       </div>
-      <div className=" max-w-[95%] mx-auto w-full my-16 flex items-center justify-between flex-wrap">
+      <div className=" max-w-[95%] mx-auto w-full gap-8 my-4 md:my-16 flex items-center justify-between flex-wrap p-4 md:p-0">
         {countData.map((item, index) => (
           <CountHolder key={index} count={item.count} text={item.text} />
         ))}
       </div>
       <div className="my-12">
-        <h2 className="text-[#1A1A1A] my-4 font-semibold text-4xl mx-auto w-max">
+        <h2 className="text-[#1A1A1A] my-4 font-semibold text-2xl md:text-4xl mx-auto text-center md:w-max">
           Cherishing Every Child&apos;s Potential
         </h2>
         <p className="text-[#4C4C4D] text-base  max-w-[980px] mx-auto text-center">
@@ -90,13 +90,15 @@ const Hero = () => {
 
         <p className="text-[#1A1A1A] font-semibold">Every Child is Special</p>
       </div>
-      <div className="flex gap-6 my-8">
+      <div className="flex gap-6 my-8 flex-wrap md:flex-nowrap w-full">
         <Image src={blackBoy} alt="image of a an african black boy" />
-        <div className="bg-[#F1F1F3] p-6 rounded-2xl grid">
-          <div className="flex items-center justify-between">
+        <div className="bg-[#F1F1F3] p-2 md:p-6 rounded-2xl grid">
+          <div className="flex items-center justify-between flex-wrap gap-4 my-4">
             <span className="flex items-center gap-3">
               <ShineMark />
-              <h4 className="text-[#1A1A1A] font-semibold text-3xl">Vision</h4>
+              <h4 className="text-[#1A1A1A] font-semibold text-2xl md:text-3xl">
+                Vision
+              </h4>
             </span>
 
             <CustomButton
@@ -105,7 +107,7 @@ const Hero = () => {
               className="!bg-[#FFFFFF] !text-[#3A5774]"
             />
           </div>
-          <p className="bg-[#FFFFFF] mx-auto p-6 rounded-2xl text-base font-normal">
+          <p className="bg-[#FFFFFF] mx-auto p-2 md:p-6 rounded-2xl text-base font-normal">
             Little Kindles Africa envisions an Africa where every child has
             access to basic education. We strive to create an inclusive
             educational landscape where no child is left behind due to
@@ -115,12 +117,14 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="flex gap-6 my-8">
-        <div className="bg-[#F1F1F3] p-6 rounded-2xl grid">
-          <div className="flex items-center justify-between">
+      <div className="flex gap-6 my-8 flex-wrap md:flex-nowrap w-full">
+        <div className="bg-[#F1F1F3] p-2 md:p-6 rounded-2xl grid">
+          <div className="flex items-center justify-between flex-wrap gap-4 my-4">
             <span className="flex items-center gap-3">
               <ShineMark />
-              <h4 className="text-[#1A1A1A] font-semibold text-3xl">Mission</h4>
+              <h4 className="text-[#1A1A1A] font-semibold text-2xl md:text-3xl">
+                Mission
+              </h4>
             </span>
             <CustomButton
               text="Learn More"
@@ -128,7 +132,7 @@ const Hero = () => {
               className="!bg-[#FFFFFF] !text-[#3A5774]"
             />
           </div>
-          <p className="bg-[#FFFFFF] mx-auto p-6 rounded-2xl text-base font-normal">
+          <p className="bg-[#FFFFFF] mx-auto p-2 md:p-6 rounded-2xl text-base font-normal">
             To support the education of 50,000 underserved children by 2030,
             Little Kindles Africa focuses on providing essential resources such
             as books, uniforms, and school supplies. We renovate and equip
@@ -140,7 +144,7 @@ const Hero = () => {
         <Image src={blackGirls} alt="image of some african girls" />
       </div>
       <div className="my-20">
-        <h2 className="text-[#1A1A1A] my-4 font-semibold text-4xl mx-auto w-max">
+        <h2 className="text-[#1A1A1A] my-4 font-semibold text-2xl md:text-4xl mx-auto text-center md:w-max">
           Transform Lives by Volunteering{" "}
         </h2>
         <p className="text-[#4C4C4D] text-base  max-w-[980px] mx-auto text-center">

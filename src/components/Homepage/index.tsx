@@ -5,7 +5,7 @@ import Footer from "../Footer";
 
 const Homepage = () => {
   return (
-    <section className="p-5">
+    <section className="p-2 md:p-5">
       <Navbar />
       <Hero />
       <Footer />
