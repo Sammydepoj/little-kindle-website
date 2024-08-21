@@ -45,23 +45,36 @@ const Footer = () => {
           </div>
           <div className="grid place-items-center gap-4">
             <p>Want to collaborate with us?</p>
-            <div className="flex items-center gap-3 w-max mx-auto bg-[#001F3F] py-2 font-normal px-3 rounded-[100px] text-white ">
+            <a
+              href="mailto:littlekindlesafrica@gmail.com"
+              className="flex items-center gap-3 w-max mx-auto bg-[#001F3F] py-2 font-normal px-3 rounded-[100px] text-white"
+            >
               <button className="">Reach Us</button>
               <EmailIcon />
-            </div>
+            </a>
           </div>
           <div className="grid place-items-center gap-4">
             <p>Follow Our Socials</p>
             <div className="flex items-center gap-3 mx-auto bg-[#001F3F] py-2 font-normal px-3 rounded-[100px] text-white ">
-              <button className="">
+              <Link href={""} className="">
                 <FacebookIcon />
-              </button>
-              <button className="">
+              </Link>
+              <Link
+                href={"https://x.com/littlekindles?s=21"}
+                target="_blank"
+                className=""
+              >
                 <TwitterIcon />
-              </button>
-              <button className="">
+              </Link>
+              <Link
+                href={
+                  "https://www.instagram.com/littlekindlesafrica?igsh=eGJneGg3NmtybjRn&utm_source=qr"
+                }
+                target="_blank"
+                className=""
+              >
                 <LinkedInIcon />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
