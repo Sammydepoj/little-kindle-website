@@ -1,7 +1,10 @@
+"use client";
 import React from "react";
 import CustomButton from "../Button";
 import ArrowIcon from "@/assets/icons/ArrowIcon";
+import { motion } from "framer-motion";
 import Image from "next/image";
+import useAOS from "@/hooks/ui/useAos";
 
 type Props = {
   image: any;
@@ -22,13 +25,25 @@ const HeroCard = ({
   learnMoreAction,
   imageAlt,
 }: Props) => {
+  useAOS();
   return (
     <div>
-      <Image alt={imageAlt ?? ""} src={image} className="-z-30 mx-auto" />
+      <Image
+        alt={imageAlt ?? ""}
+        src={image}
+        className="-z-30"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      />
       <div className="bg-[#F7F7F8] p-2 md:py-8 md:px-11 rounded-2xl max-w-[980px] mx-auto mt-[-2%]  sm:mt-[-5%] z-[90] relative">
-        <h1 className="text-[#1A1A1A] font-semibold text-2xl sm:text-3xl md:text-5xl text-center ">
+        <motion.h1
+          initial={{ opacity: 0.7 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+          className="text-[#1A1A1A] font-semibold text-2xl sm:text-3xl md:text-5xl text-center "
+        >
           {cardTitle}
-        </h1>
+        </motion.h1>
         <p className="text-base text-[#4C4C4D] font-normal text-center my-3 md:my-8">
           {cardDescription}
         </p>

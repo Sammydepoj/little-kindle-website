@@ -11,7 +11,7 @@ import aboutImg from "@/assets/images/aboutImg.png";
 import Goal from "@/components/Goal";
 import ShineMark from "@/assets/icons/ShineMark";
 import TeamCard from "@/components/TeamCard";
-import oyin from '../../assets/images/oyin.png'
+import oyin from "../../assets/images/oyin.png";
 import Donate from "@/components/Donate";
 import Footer from "@/components/Footer";
 
@@ -23,67 +23,67 @@ const teamData = [
     location: "Lagos, Nigeria",
   },
   {
-    image: "",
+    image: oyin,
     name: "Ibiloye Toluwanimi",
     title: "Head Of Finance",
     location: "Massachusetts, USA",
   },
   {
-    image: "",
+    image: oyin,
     name: "Anica",
     title: "Volunteer, Programs Department",
     location: "Lagos, Nigeria",
   },
   {
-    image: "",
+    image: oyin,
     name: "Oyin Asaaju",
     title: "Founder, Little Kindles Africa",
     location: "Lagos, Nigeria",
   },
   {
-    image: "",
+    image: oyin,
     name: "Ibiloye Toluwanimi",
     title: "Head Of Finance",
     location: "Massachusetts, USA",
   },
   {
-    image: "",
+    image: oyin,
     name: "Anica",
     title: "Volunteer, Programs Department",
     location: "Lagos, Nigeria",
   },
   {
-    image: "",
+    image: oyin,
     name: "Oyin Asaaju",
     title: "Founder, Little Kindles Africa",
     location: "Lagos, Nigeria",
   },
   {
-    image: "",
+    image: oyin,
     name: "Ibiloye Toluwanimi",
     title: "Head Of Finance",
     location: "Massachusetts, USA",
   },
   {
-    image: "",
+    image: oyin,
     name: "Anica",
     title: "Volunteer, Programs Department",
     location: "Lagos, Nigeria",
   },
   {
-    image: "",
+    image: oyin,
     name: "Oyin Asaaju",
     title: "Founder, Little Kindles Africa",
     location: "Lagos, Nigeria",
   },
   {
-    image: "",
+    image: oyin,
     name: "Ibiloye Toluwanimi",
     title: "Head Of Finance",
     location: "Massachusetts, USA",
   },
   {
-    image: "",
+    image: oyin,
     name: "Anica",
     title: "Volunteer, Programs Department",
     location: "Lagos, Nigeria",
@@ -130,7 +130,7 @@ const Page = () => {
               text="Join Us Today"
               icon={<ArrowIcon stroke="#3A5774" />}
               className="!text-[#3A5774] !bg-[#FFFFFF] "
-              //   onClick={learnMoreAction}
+              href="/join-us"
             />
             <CustomButton
               text="Donate Now"
@@ -140,7 +140,6 @@ const Page = () => {
                 </span>
               }
               className="!p-2"
-              //   onClick={donateNowAction}
             />
           </div>
         </div>
@@ -173,7 +172,7 @@ const Page = () => {
               the continent as a whole. We believe that education is the key to unlocking Africa's full potential."
           image={blackboy}
           imageAlt="image of a an african black boy"
-          showLearnMore={true}
+          showLearnMore={false}
         />
 
         <CardWithImage
@@ -185,7 +184,7 @@ const Page = () => {
             , we aim to break the cycle of poverty and build a brighter future for themselves and their communities, positively impacting 50,000 children by 2030."
           image={blackGirls}
           imageAlt="image of some african girls"
-          showLearnMore={true}
+          showLearnMore={false}
           reverse
         />
       </section>
@@ -238,7 +237,7 @@ const Page = () => {
           all working tirelessly to support our mission. Together, we bring
           diverse skills and expertise to drive our initiatives forward.
         </p>
-        <div className="  max-w-full  flex  items-center justify-between flex-wrap gap-2">
+        <div className="  max-w-full  flex  items-center gap-8 justify-between flex-wrap">
           {teamData.map((item, index) => (
             <TeamCard
               key={index}

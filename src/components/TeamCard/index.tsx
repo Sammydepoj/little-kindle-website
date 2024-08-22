@@ -1,22 +1,20 @@
+import Image from "next/image";
 import React from "react";
 
-
-
 const TeamCard = ({
-    image,
+  image,
   name,
   title,
-  location
+  location,
 }: {
   name: string;
   title: string;
   location: string;
   image: any;
-
 }) => {
   return (
-    <div className="bg-[#F7F7F8] p-3 md:p-8 rounded-2xl w-full max-w-[300px] mx-auto flex flex-col items-center h-[235px]">
-        <img src={image} alt="" />
+    <div className="bg-[#F7F7F8] p-3 md:p-8 rounded-2xl w-full max-w-[300px] mx-auto flex flex-col items-center h-full max-h-[235px]">
+      <Image src={image} alt="" />
       <h5 className="text-[#262626] text-base font-semibold my-4">{name}</h5>
       <p className="text-[#4C4C4D] text-sm font-normal text-center md:text-justify">
         {title}

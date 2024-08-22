@@ -6,24 +6,26 @@ import CountHolder from "../CountHolder";
 import ShiningLightIcon from "@/assets/icons/ShinningLight";
 import blackBoy from "../../assets/images/blackBoy.png";
 import blackGirls from "../../assets/images/blackGirls.png";
-
 import ShineMark from "@/assets/icons/ShineMark";
 import Card from "../Card";
 import Donate from "../Donate";
 import CustomButton from "../Button";
-import Footer from "../Footer";
+import CardWithImage from "../CardWithImage";
+import HeroCard from "../HeroCard";
+import Counter from "../Counter";
+
 const countData = [
   {
     text: "Children reached in Lagos, Oyo, and Ogun States through our dedicated efforts. We are committed to making education accessible and impactful for every child in these communities.",
-    count: "3000+",
+    count: <Counter value={3000} />,
   },
   {
     text: "Renovated schools and distributed essential resources including educational materials, clothes, food, books, and school bags.",
-    count: "15+",
+    count: <Counter value={15} />,
   },
   {
     text: "Dedicated volunteers ready to support education. Our volunteers are the backbone of our mission to empower children through education.",
-    count: "30+",
+    count: <Counter value={30} />,
   },
 ];
 
@@ -47,6 +49,7 @@ const Hero = () => {
             text="Learn More"
             icon={<ArrowIcon stroke="#3A5774" />}
             className="!text-[#3A5774] !bg-[#FFFFFF]"
+            href="/about-us"
           />
           <CustomButton
             text="Donate Now"
@@ -106,6 +109,7 @@ const Hero = () => {
               text="Learn More"
               icon={<ArrowIcon stroke="#3A5774" />}
               className="!bg-[#FFFFFF] !text-[#3A5774]"
+              href="/about-us"
             />
           </div>
           <p className="bg-[#FFFFFF] mx-auto p-2 md:p-6 rounded-2xl text-base font-normal">
@@ -131,6 +135,7 @@ const Hero = () => {
               text="Learn More"
               icon={<ArrowIcon stroke="#3A5774" />}
               className="!bg-[#FFFFFF] !text-[#3A5774]"
+              href="/about-us"
             />
           </div>
           <p className="bg-[#FFFFFF] mx-auto p-2 md:p-6 rounded-2xl text-base font-normal">
@@ -180,7 +185,6 @@ const Hero = () => {
         className="!bg-[#F1F1F3] !text-[#3A5774] mx-auto !my-8 w-max !px-3 !py-2"
       />
       <Donate />
-     
     </div>
   );
 };
