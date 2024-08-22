@@ -6,12 +6,14 @@ import CountHolder from "../CountHolder";
 import ShiningLightIcon from "@/assets/icons/ShinningLight";
 import blackBoy from "../../assets/images/blackBoy.png";
 import blackGirls from "../../assets/images/blackGirls.png";
+import ShineMark from "@/assets/icons/ShineMark";
 import Card from "../Card";
 import Donate from "../Donate";
 import CustomButton from "../Button";
 import CardWithImage from "../CardWithImage";
 import HeroCard from "../HeroCard";
 import Counter from "../Counter";
+
 const countData = [
   {
     text: "Children reached in Lagos, Oyo, and Ogun States through our dedicated efforts. We are committed to making education accessible and impactful for every child in these communities.",
@@ -30,16 +32,36 @@ const countData = [
 const Hero = () => {
   return (
     <div className="my-4">
-      <HeroCard
-        image={HeroImage}
-        cardTitle=" Igniting the Spark of Education for Africa's Children"
-        cardDescription="  Empowering underserved children in Africa through education. Since
+      <Image alt="" src={HeroImage} className="-z-30" priority />
+      <div className="bg-[#F7F7F8] p-2 md:py-8 md:px-11 rounded-2xl max-w-[980px] mx-auto mt-[-2%]  sm:mt-[-5%] z-[90] relative">
+        <h1 className="text-[#1A1A1A] font-semibold text-2xl sm:text-3xl md:text-5xl text-center ">
+          Igniting the Spark of Education for Africa&apos;s Children
+        </h1>
+        <p className="text-base text-[#4C4C4D] font-normal text-center my-3 md:my-8">
+          Empowering underserved children in Africa through education. Since
           2014, Little Kindles Africa has reached over 3,000 children in Lagos,
           Oyo, and Ogun States. Join us in our mission to provide essential
           educational resources and support. Together, we can create a brighter
-          future for every child."
-        showButtons
-      />
+          future for every child.
+        </p>
+        <div className="mx-auto flex items-center flex-wrap gap-8 md:w-max">
+          <CustomButton
+            text="Learn More"
+            icon={<ArrowIcon stroke="#3A5774" />}
+            className="!text-[#3A5774] !bg-[#FFFFFF]"
+            href="/about-us"
+          />
+          <CustomButton
+            text="Donate Now"
+            icon={
+              <span className="bg-[#3A5774] p-2 rounded-full">
+                <ArrowIcon stroke="#FFFFFF" />
+              </span>
+            }
+            className="!p-2"
+          />
+        </div>
+      </div>
       <div className="my-20">
         <h2 className="text-[#1A1A1A] my-4 font-semibold text-2xl md:text-4xl mx-auto text-center md:w-max">
           Make a Difference Through Education
@@ -72,33 +94,61 @@ const Hero = () => {
 
         <p className="text-[#1A1A1A] font-semibold">Every Child is Special</p>
       </div>
+      <div className="flex gap-6 my-8 flex-wrap md:flex-nowrap w-full">
+        <Image src={blackBoy} alt="image of a an african black boy" />
+        <div className="bg-[#F1F1F3] p-2 md:p-6 rounded-2xl grid">
+          <div className="flex items-center justify-between flex-wrap gap-4 my-4">
+            <span className="flex items-center gap-3">
+              <ShineMark />
+              <h4 className="text-[#1A1A1A] font-semibold text-2xl md:text-3xl">
+                Vision
+              </h4>
+            </span>
 
-      <CardWithImage
-        title="Vision"
-        description=" Little Kindles Africa envisions an Africa where every child has
+            <CustomButton
+              text="Learn More"
+              icon={<ArrowIcon stroke="#3A5774" />}
+              className="!bg-[#FFFFFF] !text-[#3A5774]"
+              href="/about-us"
+            />
+          </div>
+          <p className="bg-[#FFFFFF] mx-auto p-2 md:p-6 rounded-2xl text-base font-normal">
+            Little Kindles Africa envisions an Africa where every child has
             access to basic education. We strive to create an inclusive
             educational landscape where no child is left behind due to
             socio-economic barriers. By advocating for equal educational
             opportunities and providing essential resources, we aim to ensure
-            that every child can attend school and receive a quality education."
-        image={blackBoy}
-        imageAlt="image of a an african black boy"
-        showLearnMore={true}
-      />
-
-      <CardWithImage
-        title="Mission"
-        description="To support the education of 50,000 underserved children by 2030,
+            that every child can attend school and receive a quality education.
+          </p>
+        </div>
+      </div>
+      <div className="flex gap-6 my-8 flex-wrap md:flex-nowrap w-full">
+        <div className="bg-[#F1F1F3] p-2 md:p-6 rounded-2xl grid">
+          <div className="flex items-center justify-between flex-wrap gap-4 my-4">
+            <span className="flex items-center gap-3">
+              <ShineMark />
+              <h4 className="text-[#1A1A1A] font-semibold text-2xl md:text-3xl">
+                Mission
+              </h4>
+            </span>
+            <CustomButton
+              text="Learn More"
+              icon={<ArrowIcon stroke="#3A5774" />}
+              className="!bg-[#FFFFFF] !text-[#3A5774]"
+              href="/about-us"
+            />
+          </div>
+          <p className="bg-[#FFFFFF] mx-auto p-2 md:p-6 rounded-2xl text-base font-normal">
+            To support the education of 50,000 underserved children by 2030,
             Little Kindles Africa focuses on providing essential resources such
             as books, uniforms, and school supplies. We renovate and equip
             schools to create safe learning environments and collaborate with
             local communities, governments, and NGOs to address educational
-            needs."
-        image={blackGirls}
-        imageAlt="image of some african girls"
-        showLearnMore={true}
-        reverse
-      />
+            needs.
+          </p>
+        </div>
+        <Image src={blackGirls} alt="image of some african girls" />
+      </div>
       <div className="my-20">
         <h2 className="text-[#1A1A1A] my-4 font-semibold text-2xl md:text-4xl mx-auto text-center md:w-max">
           Transform Lives by Volunteering{" "}

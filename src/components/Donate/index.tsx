@@ -4,7 +4,7 @@ import CustomButton from "../Button";
 
 const Donate = () => {
   return (
-    <div className="rounded-2xl bg-[#215890] p-3 md:p-8 md:py-16">
+    <div className="rounded-2xl bg-[#215890] p-3 md:p-8 md:py-16 mx-auto ">
       <h4 className="text-center text-[#1A1A1A] mx-auto font-semibold text-2xl md:text-4xl max-w-[800px]">
         Donate Now to Elevate Children&apos;s Lives in Need
       </h4>
@@ -14,7 +14,7 @@ const Donate = () => {
         Together, we can ensure every child has the opportunity to succeed and
         thrive.
       </p>
-      <div className="bg-[#A4B2BF] md:rounded-[100px] flex items-center md:justify-center gap-4 my-4 p-2 flex-wrap mx-auto">
+      <div className="bg-[#A4B2BF] md:rounded-[100px] flex items-center md:justify-center gap-4 my-4 p-2 flex-wrap mx-auto max-w-[700px]">
         <p className="text-[#1A1A1A] text-center text-base">
           Click here to donate now and help level up the lives of children in
           need.
