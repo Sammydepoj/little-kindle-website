@@ -32,7 +32,7 @@ const countData = [
 const Hero = () => {
   return (
     <div className="my-4">
-      <Image alt="" src={HeroImage} className="-z-30" />
+      <Image alt="" src={HeroImage} className="-z-30" priority />
       <div className="bg-[#F7F7F8] p-2 md:py-8 md:px-11 rounded-2xl max-w-[980px] mx-auto mt-[-2%]  sm:mt-[-5%] z-[90] relative">
         <h1 className="text-[#1A1A1A] font-semibold text-2xl sm:text-3xl md:text-5xl text-center ">
           Igniting the Spark of Education for Africa&apos;s Children

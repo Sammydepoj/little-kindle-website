@@ -12,6 +12,14 @@ import Goal from "@/components/Goal";
 import ShineMark from "@/assets/icons/ShineMark";
 import TeamCard from "@/components/TeamCard";
 import oyin from "../../assets/images/oyin.png";
+import faith from "../../assets/images/faith.png";
+import anica from "../../assets/images/anica.png";
+import grace from "../../assets/images/grace.png";
+import ibiloye from "../../assets/images/ibiloye.png";
+import mary from "../../assets/images/mary.png";
+import ogun from "../../assets/images/ogun.png";
+import oluwatoyin from "../../assets/images/oluwatoyin.png";
+import samuel from "../../assets/images/samuel.png";
 import Donate from "@/components/Donate";
 import Footer from "@/components/Footer";
 
@@ -23,13 +31,13 @@ const teamData = [
     location: "Lagos, Nigeria",
   },
   {
-    image: oyin,
+    image: ibiloye,
     name: "Ibiloye Toluwanimi",
     title: "Head Of Finance",
     location: "Massachusetts, USA",
   },
   {
-    image: oyin,
+    image: anica,
     name: "Anica",
     title: "Volunteer, Programs Department",
     location: "Lagos, Nigeria",
@@ -41,13 +49,13 @@ const teamData = [
     location: "Lagos, Nigeria",
   },
   {
-    image: oyin,
+    image: ibiloye,
     name: "Ibiloye Toluwanimi",
     title: "Head Of Finance",
     location: "Massachusetts, USA",
   },
   {
-    image: oyin,
+    image: anica,
     name: "Anica",
     title: "Volunteer, Programs Department",
     location: "Lagos, Nigeria",
@@ -59,13 +67,13 @@ const teamData = [
     location: "Lagos, Nigeria",
   },
   {
-    image: oyin,
+    image: ibiloye,
     name: "Ibiloye Toluwanimi",
     title: "Head Of Finance",
     location: "Massachusetts, USA",
   },
   {
-    image: oyin,
+    image: anica,
     name: "Anica",
     title: "Volunteer, Programs Department",
     location: "Lagos, Nigeria",
@@ -77,13 +85,13 @@ const teamData = [
     location: "Lagos, Nigeria",
   },
   {
-    image: oyin,
+    image: ibiloye,
     name: "Ibiloye Toluwanimi",
     title: "Head Of Finance",
     location: "Massachusetts, USA",
   },
   {
-    image: oyin,
+    image: anica,
     name: "Anica",
     title: "Volunteer, Programs Department",
     location: "Lagos, Nigeria",
