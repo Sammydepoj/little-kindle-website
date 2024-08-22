@@ -6,7 +6,7 @@ import ArrowIcon from "@/assets/icons/ArrowIcon";
 import EmailIcon from "@/assets/icons/EmailIcon";
 import FacebookIcon from "@/assets/icons/Facebook";
 import TwitterIcon from "@/assets/icons/Twitter";
-import LinkedInIcon from "@/assets/icons/LinkedIn";
+import InstagramIcon from "@/assets/icons/InstagramIcon";
 
 const Footer = () => {
   return (
@@ -73,7 +73,7 @@ const Footer = () => {
                 target="_blank"
                 className=""
               >
-                <LinkedInIcon />
+                <InstagramIcon />
               </Link>
             </div>
           </div>
