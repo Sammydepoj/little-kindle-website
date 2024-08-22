@@ -11,18 +11,19 @@ import Donate from "../Donate";
 import CustomButton from "../Button";
 import CardWithImage from "../CardWithImage";
 import HeroCard from "../HeroCard";
+import Counter from "../Counter";
 const countData = [
   {
     text: "Children reached in Lagos, Oyo, and Ogun States through our dedicated efforts. We are committed to making education accessible and impactful for every child in these communities.",
-    count: "3000+",
+    count: <Counter value={3000} />,
   },
   {
     text: "Renovated schools and distributed essential resources including educational materials, clothes, food, books, and school bags.",
-    count: "15+",
+    count: <Counter value={15} />,
   },
   {
     text: "Dedicated volunteers ready to support education. Our volunteers are the backbone of our mission to empower children through education.",
-    count: "30+",
+    count: <Counter value={30} />,
   },
 ];
 

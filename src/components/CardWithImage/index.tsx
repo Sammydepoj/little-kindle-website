@@ -29,7 +29,11 @@ const CardWithImage = ({
       }`}
     >
       <Image src={image} alt={imageAlt} />
-      <div className="bg-[#F1F1F3] p-2 md:p-6 rounded-2xl grid">
+      <div
+        className="bg-[#F1F1F3] p-2 md:p-6 rounded-2xl grid"
+        data-aos="zoom-in"
+        data-aos-duration="1500"
+      >
         <div className="flex items-center justify-between flex-wrap gap-4 my-4">
           <span className="flex items-center gap-3">
             <ShineMark />
