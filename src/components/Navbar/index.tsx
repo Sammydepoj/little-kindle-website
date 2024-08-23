@@ -44,7 +44,7 @@ const Navbar = () => {
             About Us
           </Link>
           <Link
-            href={""}
+            href={"/our-work"}
             className={`text-[#4C4C4D] font-normal ${
               pathname === "/our-work" &&
               "bg-[#F7F7F8] py-3 px-4 border border-[#F1F1F3] rounded-[100px] text-[#1A1A1A]"
@@ -62,7 +62,7 @@ const Navbar = () => {
             Contribute
           </Link>
           <Link
-            href={"/"}
+            href={""}
             className={`text-[#4C4C4D] font-normal ${
               pathname === "/join-us" &&
               "bg-[#F7F7F8] py-3 px-4 border border-[#F1F1F3] rounded-[100px] text-[#1A1A1A]"
