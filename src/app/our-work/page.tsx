@@ -8,7 +8,7 @@ import feeding from "@/assets/images/feeding.png";
 import volunteer from "@/assets/images/volunteer.png";
 import Donate from "@/components/Donate";
 import Footer from "@/components/Footer";
-const page = () => {
+const Page = () => {
   return (
     <section className="p-2 md:p-5">
       <Navbar />
@@ -55,9 +55,10 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className=" ">
         <CardWithImage
           title="School Supplies"
+          subtitle="Equipping Students for Success"
           description=" We distribute essential educational materials, including books, uniforms, 
           school bags, and stationery, to children in need. These resources are crucial for 
           academic success, helping students to fully engage with their studies and achieve
@@ -69,6 +70,7 @@ const page = () => {
         />
         <CardWithImage
           title="Feeding Programs"
+          subtitle="Nourishing Minds and Bodies"
           description="Our feeding programs ensure that children receive 
           utritious meals, essential for their physical and cognitive development. 
           We work with local communities to identify and address food insecurity, providing
@@ -80,6 +82,7 @@ const page = () => {
         />
         <CardWithImage
           title="Volunteer Programs"
+          subtitle="Harnessing the Power of Volunteerism"
           description=" Our dedicated volunteers are the backbone of Little Kindles Africa. They bring diverse skills and expertise to our initiatives, from teaching and mentoring to organizing events and fundraising. By volunteering with us, individuals can make a meaningful impact on children's lives, while also gaining valuable experience and personal growth."
           image={volunteer}
           imageAlt="image of guys volunteering "
@@ -87,17 +90,18 @@ const page = () => {
         />
         <CardWithImage
           title="Volunteer Programs"
+          subtitle="Harnessing the Power of Volunteerism"
           description=" Our dedicated volunteers are the backbone of Little Kindles Africa. They bring diverse skills and expertise to our initiatives, from teaching and mentoring to organizing events and fundraising. By volunteering with us, individuals can make a meaningful impact on children's lives, while also gaining valuable experience and personal growth."
           image={volunteer}
           imageAlt="image of guys volunteering "
           showLearnMore={false}
           reverse
         />
-         <Donate />
-         <Footer />
+        <Donate />
+        <Footer />
       </div>
     </section>
   );
 };
 
-export default page;
+export default Page;

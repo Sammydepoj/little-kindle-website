@@ -84,6 +84,7 @@ const Navbar = () => {
           text="Reach Us"
           icon={<EmailIcon />}
           className="!py-2 !px-3 !ml-auto"
+          href="/contact-us"
         />
       </div>
       <button

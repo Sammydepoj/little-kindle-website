@@ -12,6 +12,7 @@ type Props = {
   showLearnMore: boolean;
   imageAlt: string;
   reverse?: boolean;
+  subtitle?: string;
 };
 const CardWithImage = ({
   description,
@@ -21,6 +22,7 @@ const CardWithImage = ({
   title,
   imageAlt,
   reverse,
+  subtitle,
 }: Props) => {
   return (
     <div
@@ -51,6 +53,9 @@ const CardWithImage = ({
             />
           )}
         </div>
+        <p className=" text-lg font-semibold">
+          {subtitle}
+        </p>
         <p className="bg-[#FFFFFF] mx-auto p-2 md:p-6 rounded-2xl text-base font-normal">
           {description}
         </p>
