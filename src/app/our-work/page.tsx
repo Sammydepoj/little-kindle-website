@@ -24,10 +24,7 @@ const Page = () => {
         <div className=" flex flex-col gap-[40px]">
           <div>
             <p className=" text-base font-normal text-justify">
-              Little Kindles Africa (LKA) is a registered Non-Governmental
-              Organization (NGO) under the Corporate Affairs Commission of
-              Nigeria. Established on October 1, 2014, LKA is dedicated to At
-              Little Kindles Africa, our work is driven by a commitment to
+              At Little Kindles Africa, our work is driven by a commitment to
               transform the educational landscape for underserved children. We
               believe that every child deserves access to quality education, and
               we strive to remove barriers and create opportunities for learning

@@ -71,7 +71,7 @@ const Navbar = () => {
             Join Us
           </Link>
           <Link
-            href={""}
+            href={"/event-update"}
             className={`text-[#4C4C4D] font-normal ${
               pathname === "/event-updates" &&
               "bg-[#F7F7F8] py-3 px-4 border border-[#F1F1F3] rounded-[100px] text-[#1A1A1A]"
@@ -84,7 +84,7 @@ const Navbar = () => {
           text="Reach Us"
           icon={<EmailIcon />}
           className="!py-2 !px-3 !ml-auto"
-          href="/contact-us"
+          href={"/contact-us"}
         />
       </div>
       <button
