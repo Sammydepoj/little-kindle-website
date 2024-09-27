@@ -23,7 +23,7 @@ const Footer = () => {
           <Link href={"/our-work"} className="text-[#4C4C4D] font-normal">
             Our Work
           </Link>
-          <Link href={"/"} className="text-[#4C4C4D] font-normal">
+          <Link href={"/contribute"} className="text-[#4C4C4D] font-normal">
             Contribute
           </Link>
           <Link href={"/"} className="text-[#4C4C4D] font-normal">
