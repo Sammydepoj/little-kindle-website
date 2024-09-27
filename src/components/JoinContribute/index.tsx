@@ -9,7 +9,7 @@ const JoinContribute = () => {
         <h1 className=" text-xl font-semibold">Join Our Team</h1>
 
         <p>
-          Want to make a difference by volunteering with us? We’re always
+          Want to make a difference by volunteering with us? We&apos;re always
           looking for passionate individuals who share our vision. Please visit
           our Join Us page for more information and to fill out an application.{" "}
         </p>
@@ -26,8 +26,8 @@ const JoinContribute = () => {
       <div className=" flex flex-col gap-[24px] bg-[#FCFCFD] p-[40px] border-[4px] border-[#F7F7F8] rounded-2xl">
         <h1 className=" text-xl font-semibold">Contribution Information</h1>
         <p>
-          If you're an organization or a person interested in contributing to
-          Little Kindles Africa, We’d love to hear from you, visit our
+          If you&apos;re an organization or a person interested in contributing
+          to Little Kindles Africa, We&apos;d love to hear from you, visit our
           Contribute page to make a donation or learn more about our various
           giving options.
         </p>
