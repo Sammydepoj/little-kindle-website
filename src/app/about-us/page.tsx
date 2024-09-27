@@ -134,14 +134,15 @@ const Page = () => {
             </p>
           </div>
           <div className=" flex items-center flex-wrap gap-8 md:w-max ">
-            <CustomButton
+            {/* <CustomButton
               text="Join Us Today"
               icon={<ArrowIcon stroke="#3A5774" />}
               className="!text-[#3A5774] !bg-[#FFFFFF] "
               href="/join-us"
-            />
+            /> */}
             <CustomButton
               text="Donate Now"
+              href="/contribute"
               icon={
                 <span className="bg-[#3A5774] !p-2 rounded-full">
                   <ArrowIcon stroke="#FFFFFF" />

@@ -26,10 +26,10 @@ const Footer = () => {
           <Link href={"/contribute"} className="text-[#4C4C4D] font-normal">
             Contribute
           </Link>
-          <Link href={"/"} className="text-[#4C4C4D] font-normal">
+          {/* <Link href={"/"} className="text-[#4C4C4D] font-normal">
             Join Us
-          </Link>
-          <Link href={"/"} className="text-[#4C4C4D] font-normal">
+          </Link> */}
+          <Link href={"/event-update"} className="text-[#4C4C4D] font-normal">
             Event Updates
           </Link>
         </div>
@@ -37,7 +37,9 @@ const Footer = () => {
           <div className="grid place-items-center gap-4">
             <p>Would love to donate?</p>
             <div className="flex items-center gap-3 mx-auto bg-[#001F3F] py-2 font-normal px-3 rounded-[100px] text-white ">
-              <button className="">Donate Now</button>
+              <Link href={"/contribute"} className="">
+                Donate Now
+              </Link>
               <span className="bg-[#3A5774] p-3 rounded-full">
                 <ArrowIcon stroke="#FFFFFF" />
               </span>
