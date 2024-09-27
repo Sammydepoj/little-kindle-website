@@ -1,6 +1,7 @@
 import ArrowIcon from "@/assets/icons/ArrowIcon";
 import CustomButton from "@/components/Button";
 import Navbar from "@/components/Navbar";
+import Outreach from "@/components/Outreach";
 import React from "react";
 
 const Page = () => {
@@ -47,6 +48,7 @@ const Page = () => {
           </div>
         </div>
       </div>
+        <Outreach/>
     </section>
   );
 };
