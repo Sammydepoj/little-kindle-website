@@ -51,7 +51,7 @@ const LeaveMessage = () => {
           />
         </span>
         <div className="flex justify-end w-full">
-          <CustomButton variant="primary" text="Send Message" />
+          <CustomButton text="Send Message" />
         </div>
       </form>
     </div>
