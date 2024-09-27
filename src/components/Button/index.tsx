@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 type Props = {
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   text: string;
   className?: string;
   onClick?: () => void;
