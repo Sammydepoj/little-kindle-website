@@ -13,10 +13,10 @@ const Page = () => {
       <Navbar />
       <div className=" my-14 flex flex-col lg:flex-row  bg-[#F7F7F8] p-2 md:py-8 md:px-11 rounded-2xl max-w-[100svw] mx-auto gap-[100px] md:gap-[160px] w-full border-[6px] border-[#F1F1F3] ">
         <div className=" flex flex-col text-3xl md:text-4xl font-semibold max-w-full  ">
-          <p className=" max-w-[400px] md:w-[400px] bg-[#E4E4E4] rounded-[14px] rounded-bl-none py-[8px] px-[12px]">
+          <p className=" max-w-[315px] md:w-[315px] bg-[#E4E4E4] rounded-[14px] rounded-bl-none rounded-br-none py-[8px] px-[12px]">
             We&apos;re Here to Help
           </p>
-          <p className=" bg-[#E4E4E4] rounded-[14px] max-w-[339px] md:w-[339px] p-[8px] rounded-tl-none rounded-tr-none ">
+          <p className=" bg-[#E4E4E4] rounded-[14px] max-w-[315px] md:w-[315px] p-[8px] rounded-tl-none rounded-tr-none ">
             Get in Touch Today
           </p>
         </div>

@@ -53,7 +53,7 @@ const Navbar = () => {
             Our Work
           </Link>
           <Link
-            href={""}
+            href={"/contribute"}
             className={`text-[#4C4C4D] font-normal ${
               pathname === "/contribute" &&
               "bg-[#F7F7F8] py-3 px-4 border border-[#F1F1F3] rounded-[100px] text-[#1A1A1A]"
@@ -61,7 +61,7 @@ const Navbar = () => {
           >
             Contribute
           </Link>
-          <Link
+          {/* <Link
             href={""}
             className={`text-[#4C4C4D] font-normal ${
               pathname === "/join-us" &&
@@ -69,11 +69,11 @@ const Navbar = () => {
             }`}
           >
             Join Us
-          </Link>
+          </Link> */}
           <Link
             href={"/event-update"}
             className={`text-[#4C4C4D] font-normal ${
-              pathname === "/event-updates" &&
+              pathname === "/event-update" &&
               "bg-[#F7F7F8] py-3 px-4 border border-[#F1F1F3] rounded-[100px] text-[#1A1A1A]"
             }`}
           >

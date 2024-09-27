@@ -27,6 +27,7 @@ const Donate = () => {
               <ArrowIcon stroke="#FFFFFF" />
             </span>
           }
+          href="/contribute"
           className="!bg-[#001F3F] !text-[#fff] mx-auto w-max !px-3 !py-2 !place-self-end"
         />
       </div>
