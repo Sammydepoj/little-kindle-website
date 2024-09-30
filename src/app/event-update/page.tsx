@@ -1,8 +1,43 @@
 import ArrowIcon from "@/assets/icons/ArrowIcon";
 import CustomButton from "@/components/Button";
 import Navbar from "@/components/Navbar";
+import Outreach from "@/components/Outreach";
 import React from "react";
+import luxury from "@/assets/images/luxury.png";
+import bag from "@/assets/images/bag.png";
+import UpdateCard from "@/components/UpdateCard";
+import Donate from "@/components/Donate";
+import Footer from "@/components/Footer";
 
+const Updates = [
+  {
+    image: luxury,
+    event: "Luxury For Little Charity Sales",
+    details:
+      "We are delighted to announce the successful inauguration of a new school building in Greenfield Village. This state-of-the-art facility will provide a conducive learning environment for over 300 children, empowering them with quality education and a brighter future.",
+  },
+  {
+    image: bag,
+
+    event: "Bag Distribution At Ebute Meta",
+    details:
+      "We are delighted to announce the successful inauguration of a new school building in Greenfield Village. This state-of-the-art facility will provide a conducive learning environment for over 300 children, empowering them with quality education and a brighter future.",
+  },
+  {
+    image: luxury,
+
+    event: "Luxury For Little Charity Sales",
+    details:
+      "We are delighted to announce the successful inauguration of a new school building in Greenfield Village. This state-of-the-art facility will provide a conducive learning environment for over 300 children, empowering them with quality education and a brighter future.",
+  },
+  {
+    image: bag,
+
+    event: "Bag Distribution At Ebute Meta",
+    details:
+      "We are delighted to announce the successful inauguration of a new school building in Greenfield Village. This state-of-the-art facility will provide a conducive learning environment for over 300 children, empowering them with quality education and a brighter future.",
+  },
+];
 const Page = () => {
   return (
     <section className="p-2 md:p-5">
@@ -47,6 +82,30 @@ const Page = () => {
             />
           </div>
         </div>
+      </div>
+      <Outreach />
+      <div className="mt-24 mb-8 flex flex-col gap-[50px]">
+        <h2 className="text-[#1A1A1A] font-semibold text-2xl md:text-4xl mx-auto text-center md:w-max">
+          Latest Updates{" "}
+        </h2>
+        <p className="text-[#4C4C4D] text-base  max-w-[980px] mx-auto text-center">
+          Discover our most recent developments and initiatives in our 'Latest
+          Updates' section. We keep you in the loop with the latest news,
+          events, and progress on our mission, ensuring you're always up-to-date
+          with our efforts to make a positive change.
+        </p>
+        <div className="  max-w-full  grid  items-center gap-8 justify-center  md:grid-cols-2">
+          {Updates.map((item, index) => (
+            <UpdateCard
+              key={index}
+              image={item.image}
+              event={item.event}
+              details={item.details}
+            />
+          ))}
+        </div>
+        <Donate />
+        <Footer />
       </div>
     </section>
   );
