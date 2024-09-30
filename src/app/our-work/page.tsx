@@ -94,9 +94,9 @@ const Page = () => {
           showLearnMore={false}
           reverse
         />
+      </div>
         <Donate />
         <Footer />
-      </div>
     </section>
   );
 };

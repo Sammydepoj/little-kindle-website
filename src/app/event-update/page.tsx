@@ -104,9 +104,9 @@ const Page = () => {
             />
           ))}
         </div>
-        <Donate />
-        <Footer />
       </div>
+        <Donate/>
+        <Footer />
     </section>
   );
 };
