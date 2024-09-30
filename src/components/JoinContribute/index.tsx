@@ -4,8 +4,7 @@ import ArrowIcon from "@/assets/icons/ArrowIcon";
 
 const JoinContribute = () => {
   return (
-    <section className="my-4 flex gap-[40px]">
-      
+    <section className="my-4 flex gap-[40px] w-full">
       <div className=" flex flex-col gap-[24px] bg-[#FCFCFD] p-[40px] border-[4px] border-[#F7F7F8] rounded-2xl w-full text-center">
         <h1 className=" text-xl font-semibold">Contribution Information</h1>
         <p>
