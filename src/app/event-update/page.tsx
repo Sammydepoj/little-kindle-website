@@ -89,9 +89,9 @@ const Page = () => {
           Latest Updates{" "}
         </h2>
         <p className="text-[#4C4C4D] text-base  max-w-[980px] mx-auto text-center">
-          Discover our most recent developments and initiatives in our 'Latest
-          Updates' section. We keep you in the loop with the latest news,
-          events, and progress on our mission, ensuring you're always up-to-date
+          Discover our most recent developments and initiatives in our Latest
+          Updates section. We keep you in the loop with the latest news,
+          events, and progress on our mission, ensuring you&apos;re always up-to-date
           with our efforts to make a positive change.
         </p>
         <div className="  max-w-full  grid  items-center gap-8 justify-center  md:grid-cols-2">
