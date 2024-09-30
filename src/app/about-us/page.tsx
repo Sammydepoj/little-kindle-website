@@ -267,9 +267,9 @@ const Page = () => {
           }
           className="!bg-[#F1F1F3] !text-[#3A5774] mx-auto !my-8 w-max !px-3 !py-2"
         />
+      </div>
         <Donate />
         <Footer />
-      </div>
     </section>
   );
 };
