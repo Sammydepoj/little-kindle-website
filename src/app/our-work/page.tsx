@@ -18,7 +18,7 @@ const Page = () => {
             Transforming Education
           </p>
           <p className=" bg-[#E4E4E4] rounded-[14px] max-w-[339px] md:w-[339px] p-[8px] rounded-tl-none rounded-tr-none ">
-            Empowering Futures
+            Empowering Futuress
           </p>
         </div>
         <div className=" flex flex-col gap-[40px]">
