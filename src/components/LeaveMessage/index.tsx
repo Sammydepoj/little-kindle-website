@@ -3,7 +3,7 @@ import CustomInput from "../Input";
 
 const LeaveMessage = () => {
   return (
-    <div className="my-4 p-[60px] md:p-[60px] space-y-10 bg-[#F7F7F8] border-[8px]  border-[#FCFCFD] rounded-[16px] ">
+    <div className="my-4 p-[10px] md:p-[60px] space-y-10 bg-[#F7F7F8] border-[8px]  border-[#FCFCFD] rounded-[16px] ">
       <form
         action=""
         method="post"
