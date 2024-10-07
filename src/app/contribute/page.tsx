@@ -1,10 +1,50 @@
 import ArrowIcon from "@/assets/icons/ArrowIcon";
 import CustomButton from "@/components/Button";
 import Donate from "@/components/Donate";
+import FinancialDonation from "@/components/FinancialDonation";
 import Footer from "@/components/Footer";
+import ItemDonation from "@/components/ItemDonation";
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 import React from "react";
+import blackGirls from "@/assets/images/blackGirls.png";
+import LeaveMessage from "@/components/LeaveMessage";
 
+const financialDonation = [
+  {
+    topic: "Online Donations",
+    subTopic: "Secure and easy online donation platform.",
+  },
+  {
+    topic: "Bank Transfers",
+    subTopic: "Direct bank transfer details.",
+  },
+  {
+    topic: "Monthly Giving",
+    subTopic: "Set up a recurring donation to provide ongoing support.",
+  },
+];
+const itemDonation = [
+  {
+    topic: "Books and Stationery",
+    subTopic:
+      "Equip children with essential learning tools to foster their educational growth.",
+  },
+  {
+    topic: "School Uniforms and Bags",
+    subTopic:
+      "Provide uniforms and bags to help children attend school confidently and comfortably.",
+  },
+  {
+    topic: "Non-perishable Food Items",
+    subTopic: "Set up a recurring donation to provide ongoing support.",
+  },
+  {
+    topic: "Computers and Learning Devices",
+    subTopic:
+      "Empower digital learning by donating computers and devices to enhance children's education.",
+  },
+];
 const Contribute = () => {
   return (
     <section className="p-2 md:p-5">
@@ -54,6 +94,33 @@ const Contribute = () => {
         </p>
       </div>
 
+      <div className="flex bg-[#F7F7F8] w-full rounded-2xl border-[2px] border-[#F1F1F3] justify-evenly p-[28px] gap-5">
+        <div className="flex flex-col gap-4">
+          <div className=" flex justify-center bg-[#EBEBEB] py-4 px-5 rounded-[10px] max-w-[212px] mt-[-3.5rem] ml-[6.5rem] text-[#1A1A1A] font-semibold text-xl">
+            <p>Items Donations</p>
+          </div>
+          {financialDonation.map((item, index) => (
+            <FinancialDonation
+              key={index}
+              topic={item.topic}
+              subTopic={item.subTopic}
+            />
+          ))}
+        </div>
+        <div className="flex flex-col gap-4">
+          <div className=" flex justify-center bg-[#EBEBEB] py-4 px-5 rounded-[10px] max-w-[212px] mt-[-3.5rem] ml-[14.5rem] text-[#1A1A1A] font-semibold text-xl">
+            <p>Financial Donations</p>
+          </div>
+          {itemDonation.map((item, index) => (
+            <ItemDonation
+              key={index}
+              topic={item.topic}
+              subTopic={item.subTopic}
+            />
+          ))}
+        </div>
+      </div>
+
       {/* //////////////////////////////// DONATION FEATURES //////////////////// */}
       <div className="my-20">
         <h2 className="text-[#1A1A1A] my-4 font-semibold text-2xl md:text-4xl mx-auto text-center md:w-max">
@@ -64,6 +131,10 @@ const Contribute = () => {
           provide the tools and support necessary to create brighter futures.
           Join us in making a difference, one child at a time.
         </p>
+        <div className=" flex  bg-[#FCFCFD] ">
+          <Image alt="girls" src={blackGirls} />
+          <LeaveMessage/>
+        </div>
       </div>
       {/* //////////////////////////////// DONATION CARD //////////////////// */}
 
