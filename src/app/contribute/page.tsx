@@ -9,6 +9,7 @@ import Image from "next/image";
 import React from "react";
 import blackGirls from "@/assets/images/blackGirls.png";
 import LeaveMessage from "@/components/LeaveMessage";
+import DonateMessage from "@/components/DonateMessage";
 
 const financialDonation = [
   {
@@ -131,12 +132,16 @@ const Contribute = () => {
           provide the tools and support necessary to create brighter futures.
           Join us in making a difference, one child at a time.
         </p>
-        <div className=" flex  bg-[#FCFCFD] ">
-          <Image alt="girls" src={blackGirls} />
-          <LeaveMessage/>
-        </div>
       </div>
       {/* //////////////////////////////// DONATION CARD //////////////////// */}
+      <div className=" flex bg-[#FCFCFD]  w-full mx-auto p-[60px] md:gap-20 ">
+        <Image
+          alt="girls"
+          src={blackGirls}
+          className=" w-full max-h-[418px] max-w-[372px] "
+        />
+        <DonateMessage />
+      </div>
 
       <Donate />
       <Footer />

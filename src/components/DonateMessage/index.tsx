@@ -1,9 +1,9 @@
 import CustomButton from "../Button";
 import CustomInput from "../Input";
 
-const LeaveMessage = () => {
+const DonateMessage = () => {
   return (
-    <div className="my-4 p-[10px] md:p-[60px] space-y-10 bg-[#F7F7F8] border-[8px]  border-[#FCFCFD] rounded-[16px] w-full ">
+    <div className=" p-[10px] md:p-[60px] space-y-10 bg-[#F7F7F8] border-[8px]  border-[#FCFCFD] rounded-[16px] md:w-full">
       <form
         action=""
         method="post"
@@ -37,6 +37,31 @@ const LeaveMessage = () => {
             type="text"
           />
         </div>
+        <div className=" bg-[#FCFCFD] max-w-full border-[1px] border-[#F1F1F3] rounded-[12px] p-[30px] flex flex-col gap-[30px]">
+          <p className=" text-[#262626] text-base font-semibold">
+            Type Of Donation
+          </p>
+          <span className=" flex gap-[16px] w-full justify-between">
+            <span className=" flex gap-2 ">
+              <input type="radio" />
+              <p className=" text-[#4C4C4D] text-base font-semibold">
+                Financial Donations
+              </p>
+            </span>
+            <span className=" flex gap-2">
+              <input type="radio" />
+              <p className=" text-[#4C4C4D] text-base font-semibold">
+                Items Donations
+              </p>
+            </span>
+          </span>
+        </div>
+        <CustomInput
+          id="Amount"
+          label="Amount"
+          placeholder="Enter your Amount"
+          type="text"
+        />
         <span>
           <label
             htmlFor="Message"
@@ -51,11 +76,11 @@ const LeaveMessage = () => {
           />
         </span>
         <div className="flex justify-end w-full">
-          <CustomButton text="Send Message" />
+          <CustomButton text="Donate Now" />
         </div>
       </form>
     </div>
   );
 };
 
-export default LeaveMessage;
+export default DonateMessage;
