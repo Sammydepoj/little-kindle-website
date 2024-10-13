@@ -97,11 +97,11 @@ const Contribute = () => {
 
       <div className="flex bg-[#F7F7F8] w-full rounded-2xl border-[2px] border-[#F1F1F3] justify-evenly p-[28px] gap-5">
         <div className="flex flex-col gap-4">
-          <div className=" flex justify-center bg-[#EBEBEB] py-4 px-5 rounded-[10px] max-w-[212px] mt-[-3.5rem] ml-[6.5rem] text-[#1A1A1A] font-semibold text-xl">
+          <div className=" flex justify-center bg-[#EBEBEB] py-4 px-5 rounded-[10px] max-w-[212px] mt-[-3.5rem] sm:ml-[15rem]  text-[#1A1A1A] font-semibold text-xl">
             <p>Items Donations</p>
           </div>
-          {financialDonation.map((item, index) => (
-            <FinancialDonation
+          {itemDonation.map((item, index) => (
+            <ItemDonation
               key={index}
               topic={item.topic}
               subTopic={item.subTopic}
@@ -109,11 +109,11 @@ const Contribute = () => {
           ))}
         </div>
         <div className="flex flex-col gap-4">
-          <div className=" flex justify-center bg-[#EBEBEB] py-4 px-5 rounded-[10px] max-w-[212px] mt-[-3.5rem] ml-[14.5rem] text-[#1A1A1A] font-semibold text-xl">
+          <div className=" flex justify-center bg-[#EBEBEB] py-4 px-5 rounded-[10px] max-w-[212px] mt-[-3.5rem] sm:ml-[6.5rem]  text-[#1A1A1A] font-semibold text-xl">
             <p>Financial Donations</p>
           </div>
-          {itemDonation.map((item, index) => (
-            <ItemDonation
+          {financialDonation.map((item, index) => (
+            <FinancialDonation
               key={index}
               topic={item.topic}
               subTopic={item.subTopic}
@@ -134,7 +134,7 @@ const Contribute = () => {
         </p>
       </div>
       {/* //////////////////////////////// DONATION CARD //////////////////// */}
-      <div className=" flex bg-[#FCFCFD]  w-full mx-auto p-[60px] md:gap-20 ">
+      <div className=" md:flex bg-[#FCFCFD]  w-full mx-auto p-[60px] md:gap-20">
         <Image
           alt="girls"
           src={blackGirls}
