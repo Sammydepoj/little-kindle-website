@@ -102,8 +102,8 @@ const Contribute = () => {
               Items Donations
             </p>
           </div>
-          {financialDonation.map((item, index) => (
-            <FinancialDonation
+          {itemDonation.map((item, index) => (
+            <ItemDonation
               key={index}
               topic={item.topic}
               subTopic={item.subTopic}
@@ -116,8 +116,8 @@ const Contribute = () => {
               Financial Donations
             </p>
           </div>
-          {itemDonation.map((item, index) => (
-            <ItemDonation
+          {financialDonation.map((item, index) => (
+            <FinancialDonation
               key={index}
               topic={item.topic}
               subTopic={item.subTopic}
@@ -138,7 +138,7 @@ const Contribute = () => {
         </p>
       </div>
       {/* //////////////////////////////// DONATION CARD //////////////////// */}
-      <div className=" flex bg-[#FCFCFD]  w-full mx-auto p-[60px] md:gap-20 ">
+      <div className=" md:flex bg-[#FCFCFD]  w-full mx-auto p-[60px] md:gap-20">
         <Image
           alt="girls"
           src={blackGirls}

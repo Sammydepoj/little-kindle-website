@@ -20,7 +20,7 @@ const CustomInput = ({
       <input
         type={type}
         id={id}
-        className="bg-[#FCFCFD] p-3 rounded-md w-full  outline-none placeholder:text-[#59595A] placeholder:text-sm text-sm text-[#59595A] "
+        className="bg-[#FCFCFD] p-5 rounded-md w-full  outline-none placeholder:text-[#59595A] placeholder:text-sm text-sm text-[#59595A] "
         placeholder={placeholder}
       />
     </div>
