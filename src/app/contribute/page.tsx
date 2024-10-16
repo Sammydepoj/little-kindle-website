@@ -97,8 +97,10 @@ const Contribute = () => {
 
       <div className="flex bg-[#F7F7F8] w-full rounded-2xl border-[2px] border-[#F1F1F3] justify-evenly p-[28px] gap-5">
         <div className="flex flex-col gap-4">
-          <div className=" flex justify-center bg-[#EBEBEB] py-4 px-5 rounded-[10px] max-w-[212px] mt-[-3.5rem] ml-[6.5rem] text-[#1A1A1A] font-semibold text-xl">
-            <p>Items Donations</p>
+          <div className=" flex justify-center">
+            <p className=" bg-[#EBEBEB] py-4 px-5 rounded-[10px] max-w-[212px] mt-[-3.5rem]  text-[#1A1A1A] font-semibold text-xl">
+              Items Donations
+            </p>
           </div>
           {financialDonation.map((item, index) => (
             <FinancialDonation
@@ -108,9 +110,11 @@ const Contribute = () => {
             />
           ))}
         </div>
-        <div className="flex flex-col gap-4">
-          <div className=" flex justify-center bg-[#EBEBEB] py-4 px-5 rounded-[10px] max-w-[212px] mt-[-3.5rem] ml-[14.5rem] text-[#1A1A1A] font-semibold text-xl">
-            <p>Financial Donations</p>
+        <div className="flex flex-col gap-4 ">
+          <div className=" flex justify-center">
+            <p className=" bg-[#EBEBEB] py-4 px-5 rounded-[10px] max-w-[212px] mt-[-3.5rem] text-[#1A1A1A] font-semibold text-xl whitespace-nowrap">
+              Financial Donations
+            </p>
           </div>
           {itemDonation.map((item, index) => (
             <ItemDonation
@@ -138,7 +142,7 @@ const Contribute = () => {
         <Image
           alt="girls"
           src={blackGirls}
-          className=" w-full max-h-[418px] max-w-[372px] "
+          className=" w-full max-h-[418px] max-w-[372px] hidden md:block "
         />
         <DonateMessage />
       </div>

@@ -33,7 +33,7 @@ const Page = () => {
               have the support and resources they need to succeed.
             </p>
           </div>
-          <div className=" flex items-center flex-wrap gap-8 md:w-max ">
+          <div className=" flex items-center flex-wrap gap-8 md:w-max justify-center">
             <CustomButton
               text="Join Us Today"
               icon={<ArrowIcon stroke="#3A5774" />}

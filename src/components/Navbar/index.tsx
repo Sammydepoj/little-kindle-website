@@ -91,7 +91,7 @@ const Navbar = () => {
         onClick={() => {
           setOpen(!open);
         }}
-        className="place-self-end my-auto lg:hidden"
+        className="place-self-end my-auto lg:hidden px-2"
       >
         {open ? <CloseMenuIcon /> : <OpenMenuIcon />}
       </button>

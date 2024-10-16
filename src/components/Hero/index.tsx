@@ -44,7 +44,7 @@ const Hero = () => {
           educational resources and support. Together, we can create a brighter
           future for every child.
         </p>
-        <div className="mx-auto flex items-center flex-wrap gap-8 md:w-max">
+        <div className="mx-auto flex items-center flex-wrap gap-8 md:w-max w-full justify-center">
           <CustomButton
             text="Learn More"
             icon={<ArrowIcon stroke="#3A5774" />}
@@ -73,7 +73,7 @@ const Hero = () => {
           success.
         </p>
       </div>
-      <div className=" max-w-[95%] mx-auto w-full gap-8 my-4 md:my-16 flex items-center justify-between flex-wrap p-4 md:p-0">
+      <div className=" max-w-[95%] mx-auto w-full gap-8 my-4 md:my-16 flex items-center lg:justify-between justify-center flex-wrap p-4 md:p-0">
         {countData.map((item, index) => (
           <CountHolder key={index} count={item.count} text={item.text} />
         ))}
@@ -94,7 +94,7 @@ const Hero = () => {
 
         <p className="text-[#1A1A1A] font-semibold">Every Child is Special</p>
       </div>
-      <div className="flex gap-6 my-8 flex-wrap md:flex-nowrap w-full">
+      <div className="flex gap-6 my-8 flex-wrap md:flex-nowrap w-full justify-center">
         <Image src={blackBoy} alt="image of a an african black boy" />
         <div className="bg-[#F1F1F3] p-2 md:p-6 rounded-2xl grid">
           <div className="flex items-center justify-between flex-wrap gap-4 my-4">
@@ -122,7 +122,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="flex gap-6 my-8 flex-wrap md:flex-nowrap w-full">
+      <div className="flex gap-6 my-8 flex-wrap md:flex-nowrap w-full justify-center">
         <div className="bg-[#F1F1F3] p-2 md:p-6 rounded-2xl grid">
           <div className="flex items-center justify-between flex-wrap gap-4 my-4">
             <span className="flex items-center gap-3">
