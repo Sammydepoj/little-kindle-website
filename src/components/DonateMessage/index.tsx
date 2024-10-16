@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import CustomButton from "../Button";
 import CustomInput from "../Input";
@@ -11,7 +11,7 @@ const DonateMessage = () => {
   };
 
   return (
-    <div className="p-[10px] md:p-[60px] space-y-10 bg-[#F7F7F8] border-[8px] border-[#FCFCFD] rounded-[16px] md:w-full">
+    <div className="p-[10px] md:p-[20px] space-y-10 bg-[#F7F7F8] border-[8px] border-[#FCFCFD] rounded-[16px] md:w-full">
       <form
         action=""
         method="post"
@@ -48,23 +48,33 @@ const DonateMessage = () => {
         </div>
 
         <div className="bg-[#FCFCFD] max-w-full border-[1px] border-[#F1F1F3] rounded-[12px] p-[30px] flex flex-col gap-[30px]">
-          <p className="text-[#262626] text-base font-semibold">Type Of Donation</p>
-          <span className="flex gap-[16px] w-full justify-between">
+          <p className="text-[#262626] text-base font-semibold">
+            Type Of Donation
+          </p>
+          <span className="flex md:max-w-[70%] w-full justify-between flex-col sm:flex-row ">
             {/* Financial Donation Option */}
-            <span className="flex gap-2" onClick={() => handleDonationTypeChange("financial")}>
+            <span
+              className="flex gap-2 cursor-pointer"
+              onClick={() => handleDonationTypeChange("financial")}
+            >
               <input
+                className=" cursor-pointer"
                 type="radio"
                 checked={donationType === "financial"}
                 onChange={() => handleDonationTypeChange("financial")}
               />
-              <p className="text-[#4C4C4D] text-base font-semibold">
+              <p className="text-[#4C4C4D] text-base font-semibold ">
                 Financial Donations
               </p>
             </span>
 
             {/* Items Donation Option */}
-            <span className="flex gap-2" onClick={() => handleDonationTypeChange("items")}>
+            <span
+              className="flex gap-2 cursor-pointer"
+              onClick={() => handleDonationTypeChange("items")}
+            >
               <input
+                className=" cursor-pointer"
                 type="radio"
                 checked={donationType === "items"}
                 onChange={() => handleDonationTypeChange("items")}
@@ -87,13 +97,16 @@ const DonateMessage = () => {
         )}
 
         {donationType === "items" && (
-          
           <div>
             <div className="flex flex-col gap-[6px] ">
-              <p className="text-[#262626] text-base font-semibold">How to Donate Items</p>
+              <p className="text-[#262626] text-base font-semibold">
+                How to Donate Items
+              </p>
               <p className="text-[#4C4C4D] text-base font-medium">
-                List items you want to donate and leave an address for our team to arrange a pickup.
-              </p><br />
+                List items you want to donate and leave an address for our team
+                to arrange a pickup.
+              </p>
+              <br />
             </div>
             <span>
               <label

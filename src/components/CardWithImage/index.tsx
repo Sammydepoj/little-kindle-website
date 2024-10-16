@@ -26,7 +26,7 @@ const CardWithImage = ({
 }: Props) => {
   return (
     <div
-      className={`flex gap-6 my-8 flex-wrap md:flex-nowrap w-full ${
+      className={`flex gap-6 my-8 flex-wrap md:flex-nowrap w-full justify-center ${
         reverse && "flex-row-reverse"
       }`}
     >
@@ -53,9 +53,7 @@ const CardWithImage = ({
             />
           )}
         </div>
-        <p className=" text-lg font-semibold">
-          {subtitle}
-        </p>
+        <p className=" text-lg font-semibold">{subtitle}</p>
         <p className="bg-[#FFFFFF] mx-auto p-2 md:p-6 rounded-2xl text-base font-normal">
           {description}
         </p>
