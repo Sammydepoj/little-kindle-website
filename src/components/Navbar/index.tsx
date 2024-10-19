@@ -15,7 +15,9 @@ const Navbar = () => {
 
   return (
     <div className="grid grid-cols-[0.7fr_2fr] relative">
-      <Image src={logo} alt="" />
+      <Link href={"/"} className="">
+        <Image src={logo} alt="" />
+      </Link>
 
       <div
         className={` items-center justify-evenly  ${

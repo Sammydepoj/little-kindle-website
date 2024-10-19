@@ -58,6 +58,7 @@ const Hero = () => {
                 <ArrowIcon stroke="#FFFFFF" />
               </span>
             }
+            href="/contribute"
             className="!p-2"
           />
         </div>
@@ -160,7 +161,7 @@ const Hero = () => {
           most.
         </p>
       </div>
-      <div className="flex items-center gap-6 flex-wrap mx-auto  ">
+      <div className="flex items-center gap-6 flex-wrap mx-auto  my-8">
         <Card
           title="Meaningful Impact"
           description="Use your unique skillset to make a difference in children's lives. Your contributions will directly benefit educational programs and empower underserved children."
@@ -175,7 +176,7 @@ const Hero = () => {
         />
       </div>
 
-      <CustomButton
+      {/* <CustomButton
         text="Join Us Today"
         icon={
           <span className="bg-[#3A5774] p-3 rounded-full">
@@ -183,7 +184,8 @@ const Hero = () => {
           </span>
         }
         className="!bg-[#F1F1F3] !text-[#3A5774] mx-auto !my-8 w-max !px-3 !py-2"
-      />
+        href=""
+      /> */}
       <Donate />
     </div>
   );

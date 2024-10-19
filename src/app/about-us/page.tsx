@@ -43,57 +43,39 @@ const teamData = [
     location: "Lagos, Nigeria",
   },
   {
-    image: oyin,
-    name: "Oyin Asaaju",
-    title: "Founder, Little Kindles Africa",
-    location: "Lagos, Nigeria",
-  },
-  {
-    image: ibiloye,
-    name: "Ibiloye Toluwanimi",
-    title: "Head Of Finance",
-    location: "Massachusetts, USA",
-  },
-  {
-    image: anica,
-    name: "Anica",
+    image: mary,
+    name: "Mary Uzoaga",
     title: "Volunteer, Programs Department",
     location: "Lagos, Nigeria",
   },
   {
-    image: oyin,
-    name: "Oyin Asaaju",
-    title: "Founder, Little Kindles Africa",
+    image: grace,
+    name: "Grace  Ademola",
+    title: "Volunteer, Policy and Advocacy",
+    location: "United Kingdom",
+  },
+  {
+    image: ogun,
+    name: "Ogunbona Adewale",
+    title: "Volunteer, Policy and Advocacy",
     location: "Lagos, Nigeria",
   },
   {
-    image: ibiloye,
-    name: "Ibiloye Toluwanimi",
-    title: "Head Of Finance",
-    location: "Massachusetts, USA",
+    image: samuel,
+    name: "Samuel Adepoju",
+    title: "Volunteer, Tech Team",
+    location: "Lagos, Nigeria",
   },
   {
-    image: anica,
-    name: "Anica",
+    image: faith,
+    name: "Faith Arinze",
     title: "Volunteer, Programs Department",
     location: "Lagos, Nigeria",
   },
   {
-    image: oyin,
-    name: "Oyin Asaaju",
-    title: "Founder, Little Kindles Africa",
-    location: "Lagos, Nigeria",
-  },
-  {
-    image: ibiloye,
-    name: "Ibiloye Toluwanimi",
-    title: "Head Of Finance",
-    location: "Massachusetts, USA",
-  },
-  {
-    image: anica,
-    name: "Anica",
-    title: "Volunteer, Programs Department",
+    image: oluwatoyin,
+    name: "Oluwatoyin Asada",
+    title: "Volunteer, Policy and Advocacy",
     location: "Lagos, Nigeria",
   },
 ];
@@ -258,7 +240,7 @@ const Page = () => {
           ))}
           <div></div>
         </div>
-        <CustomButton
+        {/* <CustomButton
           text="Join Us Today"
           icon={
             <span className="bg-[#3A5774] p-3 rounded-full">
@@ -266,7 +248,7 @@ const Page = () => {
             </span>
           }
           className="!bg-[#F1F1F3] !text-[#3A5774] mx-auto !my-8 w-max !px-3 !py-2"
-        />
+        /> */}
       </div>
       <Donate />
       <Footer />

@@ -70,7 +70,7 @@ const Contribute = () => {
               can create a brighter future for Africa’s underserved children.
             </p>
           </div>
-          <div className=" flex items-center flex-wrap gap-8 md:w-max ">
+          {/* <div className=" flex items-center flex-wrap gap-8 md:w-max ">
             <CustomButton
               text="Donate Now"
               icon={
@@ -80,7 +80,7 @@ const Contribute = () => {
               }
               className="!p-2"
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="my-20">

@@ -31,7 +31,7 @@ const HeroCard = ({
       <Image
         alt={imageAlt ?? ""}
         src={image}
-        className="-z-30"
+        className="-z-30 mx-auto"
         data-aos="zoom-in"
         data-aos-duration="1500"
       />

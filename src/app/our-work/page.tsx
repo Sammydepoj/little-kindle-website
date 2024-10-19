@@ -34,12 +34,12 @@ const Page = () => {
             </p>
           </div>
           <div className=" flex items-center flex-wrap gap-8 md:w-max justify-center">
-            <CustomButton
+            {/* <CustomButton
               text="Join Us Today"
               icon={<ArrowIcon stroke="#3A5774" />}
               className="!text-[#3A5774] !bg-[#FFFFFF] "
               href="/join-us"
-            />
+            /> */}
             <CustomButton
               text="Donate Now"
               icon={
@@ -47,6 +47,7 @@ const Page = () => {
                   <ArrowIcon stroke="#FFFFFF" />
                 </span>
               }
+              href="/contribute"
               className="!p-2"
             />
           </div>
