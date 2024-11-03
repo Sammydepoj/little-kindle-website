@@ -20,7 +20,7 @@ const countData = [
     count: <Counter value={3000} />,
   },
   {
-    text: "Renovated schools and distributed essential resources including educational materials, clothes, food, books, and school bags.",
+    text: "Outreach programs were conducted in schools, distributing essential resources including educational materials, clothes, food, books, and school bags.",
     count: <Counter value={15} />,
   },
   {
