@@ -24,7 +24,7 @@ const countData = [
     count: <Counter value={15} />,
   },
   {
-    text: "Dedicated volunteers ready to support education. Our volunteers are the backbone of our mission to empower children through education.",
+    text: "Dedicated volunteers ready to support education. Our volunteers  are the backbone of our mission to empower children through education.",
     count: <Counter value={30} />,
   },
 ];
