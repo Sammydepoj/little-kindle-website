@@ -20,6 +20,8 @@ import mary from "../../assets/images/mary.png";
 import ogun from "../../assets/images/ogun.png";
 import oluwatoyin from "../../assets/images/oluwatoyin.png";
 import samuel from "../../assets/images/samuel.png";
+import yewande from "../../assets/images/yewande.jpg";
+import michael from "../../assets/images/michael.jpg";
 import Donate from "@/components/Donate";
 import Footer from "@/components/Footer";
 
@@ -51,7 +53,7 @@ const teamData = [
   {
     image: grace,
     name: "Grace  Ademola",
-    title: "Volunteer, Policy and Advocacy",
+    title: "Vice President, Partnerships and Policy",
     location: "United Kingdom",
   },
   {
@@ -63,19 +65,31 @@ const teamData = [
   {
     image: samuel,
     name: "Samuel Adepoju",
-    title: "Volunteer, Tech Team",
+    title: "Vice President, Tech Team",
     location: "Lagos, Nigeria",
   },
   {
     image: faith,
     name: "Faith Arinze",
-    title: "Volunteer, Programs Department",
+    title: "Vice President, Programs Department",
     location: "Lagos, Nigeria",
   },
   {
     image: oluwatoyin,
     name: "Oluwatoyin Asada",
     title: "Volunteer, Policy and Advocacy",
+    location: "Lagos, Nigeria",
+  },
+  {
+    image: yewande,
+    name: "Yewande Oyewole",
+    title: "Volunteer, Programs Department",
+    location: "Lagos, Nigeria",
+  },
+  {
+    image: michael,
+    name: "Michael Johnson",
+    title: "Volunteer, Programs Department",
     location: "Lagos, Nigeria",
   },
 ];
