@@ -93,8 +93,27 @@ const Contribute = () => {
           education and essential resources to underserved children, creating a
           brighter future for all.
         </p>
+        <p className=" bg-[#EBEBEB] max-w-fit text-[#1A1A1A] py-4 px-5 rounded-[10px] font-semibold relative top-[6.5rem]  mx-auto text-center">
+          Make All Financial Donations To The Account Below
+        </p>
+        <div className=" flex flex-col gap-5 bg-[#F1F1F3] py-[5rem] px-[10rem] rounded-2xl justify-center align-middle">
+          <div className=" bg-[#FFFFFF] rounded-[14px] flex flex-col justify-center items-center text-center gap-[52px] align-middle p-4 text-[#1A1A1A] py-[66px]">
+            <div>
+              <p className=" text-[18px] font-semibold">Account Number</p>
+              <p className=" text-[22px] font-bold">1015275089</p>
+            </div>
+            <div>
+              <p className=" text-[18px] font-semibold">Bank</p>
+              <p className=" text-[22px] font-bold">Zenith Bank</p>
+            </div>
+            <div>
+              <p className=" text-[18px] font-semibold">Account Name</p>
+              <p className=" text-[22px] font-bold">Little Kindles Africa</p>
+            </div>
+          </div>
+        </div>
       </div>
-
+      {/* 
       <div className="flex bg-[#F7F7F8] w-full rounded-2xl border-[2px] border-[#F1F1F3] justify-evenly p-[28px] gap-5 flex-col md:flex-row">
         <div className="flex flex-col gap-4 border-[1px] border-[#F1F1F3] p-2 rounded-[20px]">
           <div className=" flex justify-center ">
@@ -124,10 +143,9 @@ const Contribute = () => {
             />
           ))}
         </div>
-      </div>
+      </div> */}
 
-      {/* //////////////////////////////// DONATION FEATURES //////////////////// */}
-      <div className="my-20">
+      {/* <div className="my-20">
         <h2 className="text-[#1A1A1A] my-4 font-semibold text-2xl md:text-4xl mx-auto text-center md:w-max">
           Donate to the Gift of Learning
         </h2>
@@ -136,16 +154,15 @@ const Contribute = () => {
           provide the tools and support necessary to create brighter futures.
           Join us in making a difference, one child at a time.
         </p>
-      </div>
-      {/* //////////////////////////////// DONATION CARD //////////////////// */}
-      <div className=" md:flex bg-[#FCFCFD]  w-full mx-auto p-[10px] md:p-[40px] md:gap-20">
+      </div> */}
+      {/* <div className=" md:flex bg-[#FCFCFD]  w-full mx-auto p-[10px] md:p-[40px] md:gap-20">
         <Image
           alt="girls"
           src={blackGirls}
           className=" w-full max-h-[418px] max-w-[372px] hidden md:block "
         />
         <DonateMessage />
-      </div>
+      </div> */}
 
       <Donate />
       <Footer />
