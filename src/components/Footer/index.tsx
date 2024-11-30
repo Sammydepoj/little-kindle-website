@@ -58,9 +58,9 @@ const Footer = () => {
           <div className="grid place-items-center gap-4">
             <p>Follow Our Socials</p>
             <div className="flex items-center gap-3 mx-auto bg-[#001F3F] py-2 font-normal px-3 rounded-[100px] text-white ">
-              <Link href={""} className="">
+              {/* <Link href={""} className="">
                 <FacebookIcon />
-              </Link>
+              </Link> */}
               <Link
                 href={"https://x.com/littlekindles?s=21"}
                 target="_blank"
@@ -82,7 +82,8 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-[#4C4C4D] my-8 text-center mx-auto">
-        © 2024 LittleKindles Africa. All rights reserved.
+        &copy; {new Date().getFullYear()} LittleKindles Africa. All rights
+        reserved.
       </p>
     </footer>
   );
