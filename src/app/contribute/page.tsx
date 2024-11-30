@@ -10,6 +10,7 @@ import React from "react";
 import blackGirls from "@/assets/images/blackGirls.png";
 import LeaveMessage from "@/components/LeaveMessage";
 import DonateMessage from "@/components/DonateMessage";
+import JoinContribute from "@/components/JoinContribute";
 
 const financialDonation = [
   {
@@ -163,7 +164,7 @@ const Contribute = () => {
         />
         <DonateMessage />
       </div> */}
-
+      <JoinContribute />
       <Donate />
       <Footer />
     </section>
