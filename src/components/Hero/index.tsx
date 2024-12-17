@@ -46,10 +46,10 @@ const Hero = () => {
         </p>
         <div className="mx-auto flex items-center flex-wrap gap-8 md:w-max w-full justify-center">
           <CustomButton
-            text="Learn More"
+            text="Join us"
             icon={<ArrowIcon stroke="#3A5774" />}
             className="!text-[#3A5774] !bg-[#FFFFFF]"
-            href="/about-us"
+            href="https://bit.ly/LKAVolunteer"
           />
           <CustomButton
             text="Donate Now"

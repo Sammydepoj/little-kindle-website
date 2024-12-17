@@ -5,7 +5,7 @@ import ArrowIcon from "@/assets/icons/ArrowIcon";
 const JoinContribute = () => {
   return (
     <section className="my-4 flex gap-[40px] w-full flex-wrap md:flex-nowrap max-w-[1200px] mx-auto">
-      <div className=" flex flex-col gap-[24px] bg-[#FCFCFD] p-[40px] border-[4px] border-[#F7F7F8] rounded-2xl w-full  text-start">
+      <div className=" flex flex-col gap-[24px] bg-[#FCFCFD] justify-between p-[40px] border-[4px] border-[#F7F7F8] rounded-2xl w-full  text-start">
         <h1 className=" text-xl font-semibold">Join Our Team</h1>
         <p>
           Want to make a difference by volunteering with us? We’re always
@@ -23,7 +23,7 @@ const JoinContribute = () => {
           className="!bg-[#001F3F] !text-[#fff] mx-auto w-max !px-3 !py-2 !place-self-end"
         />
       </div>
-      <div className=" flex flex-col gap-[24px] bg-[#FCFCFD] p-[40px] border-[4px] border-[#F7F7F8] rounded-2xl w-full text-start">
+      <div className=" flex flex-col gap-[24px] bg-[#FCFCFD] justify-between p-[40px] border-[4px] border-[#F7F7F8] rounded-2xl w-full text-start">
         <h1 className=" text-xl font-semibold">Contribution Information</h1>
         <p>
           If you&apos;re an organization or a person interested in contributing
