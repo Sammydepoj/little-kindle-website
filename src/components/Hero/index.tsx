@@ -38,7 +38,7 @@ const Hero = () => {
           Igniting the Spark of Education for Africa&apos;s Children
         </h1>
         <p className="text-base text-[#4C4C4D] font-normal text-center my-3 md:my-8">
-          Empowering underserved children in Africa through education. Since
+          Empowering children in underserved communities in Africa through education. Since
           2014, Little Kindles Africa has reached over 3,000 children in Lagos,
           Oyo, and Ogun States. Join us in our mission to provide essential
           educational resources and support. Together, we can create a brighter
@@ -46,7 +46,8 @@ const Hero = () => {
         </p>
         <div className="mx-auto flex items-center flex-wrap gap-8 md:w-max w-full justify-center">
           <CustomButton
-            text="Join us"
+            text="Volunteer with us"
+            target="_blank"
             icon={<ArrowIcon stroke="#3A5774" />}
             className="!text-[#3A5774] !bg-[#FFFFFF]"
             href="https://bit.ly/LKAVolunteer"

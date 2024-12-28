@@ -86,7 +86,7 @@ const Page = () => {
           imageAlt="image of guys volunteering "
           showLearnMore={false}
         />
-        <CardWithImage
+        {/* <CardWithImage
           title="Volunteer Programs"
           subtitle="Harnessing the Power of Volunteerism"
           description=" Our dedicated volunteers are the backbone of Little Kindles Africa. They bring diverse skills and expertise to our initiatives, from teaching and mentoring to organizing events and fundraising. By volunteering with us, individuals can make a meaningful impact on children's lives, while also gaining valuable experience and personal growth."
@@ -94,7 +94,7 @@ const Page = () => {
           imageAlt="image of guys volunteering "
           showLearnMore={false}
           reverse
-        />
+        /> */}
       </div>
       <Donate />
       <Footer />
