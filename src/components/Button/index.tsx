@@ -9,6 +9,7 @@ type Props = {
   className?: string;
   onClick?: () => void;
   href?: string;
+  target?: React.HTMLAttributeAnchorTarget | undefined;
 };
 
 const CustomButton: React.FC<Props> = ({
@@ -17,9 +18,10 @@ const CustomButton: React.FC<Props> = ({
   className,
   onClick,
   href = "",
+  target = "_self",
 }) => {
   return (
-    <Link href={href} className="">
+    <Link href={href} className="" target={target}>
       <motion.div
         whileHover={{
           scale: 1.1,

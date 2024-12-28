@@ -39,6 +39,24 @@ const teamData = [
     location: "Massachusetts, USA",
   },
   {
+    image: faith,
+    name: "Faith Arinze",
+    title: "Vice President, Programs Department",
+    location: "Lagos, Nigeria",
+  },
+  {
+    image: grace,
+    name: "Grace  Ademola",
+    title: "Vice President, Partnerships and Policy",
+    location: "United Kingdom",
+  },
+  {
+    image: samuel,
+    name: "Samuel Adepoju",
+    title: "Vice President, Technology",
+    location: "Lagos, Nigeria",
+  },
+  {
     image: anica,
     name: "Anica",
     title: "Volunteer, Programs Department",
@@ -51,33 +69,15 @@ const teamData = [
     location: "Lagos, Nigeria",
   },
   {
-    image: grace,
-    name: "Grace  Ademola",
-    title: "Vice President, Partnerships and Policy",
-    location: "United Kingdom",
-  },
-  {
     image: ogun,
     name: "Ogunbona Adewale",
-    title: "Volunteer, Policy and Advocacy",
-    location: "Lagos, Nigeria",
-  },
-  {
-    image: samuel,
-    name: "Samuel Adepoju",
-    title: "Vice President, Tech Team",
-    location: "Lagos, Nigeria",
-  },
-  {
-    image: faith,
-    name: "Faith Arinze",
-    title: "Vice President, Programs Department",
+    title: "Volunteer, Partnerships and Policy Department",
     location: "Lagos, Nigeria",
   },
   {
     image: oluwatoyin,
     name: "Oluwatoyin Asada",
-    title: "Volunteer, Policy and Advocacy",
+    title: "Volunteer, Partnerships and Policy Department",
     location: "Lagos, Nigeria",
   },
   {
