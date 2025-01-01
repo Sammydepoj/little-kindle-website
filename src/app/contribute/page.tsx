@@ -97,8 +97,8 @@ const Contribute = () => {
         <p className=" bg-[#EBEBEB] max-w-fit text-[#1A1A1A] py-4 px-5 rounded-[10px] font-semibold relative top-[6.5rem]  mx-auto text-center">
           Make All Financial Donations To The Account Below
         </p>
-        <div className=" flex flex-col gap-5 bg-[#F1F1F3] py-[5rem] px-[10rem] rounded-2xl justify-center align-middle">
-          <div className=" bg-[#FFFFFF] rounded-[14px] flex flex-col justify-center items-center text-center gap-[52px] align-middle p-4 text-[#1A1A1A] py-[66px]">
+        <div className="bg-[#F1F1F3] py-[5rem] md:px-[10rem] rounded-2xl w-full">
+          <div className=" bg-[#FFFFFF] w-full  rounded-[14px] flex flex-col justify-center items-center text-center gap-[52px]  p-4 text-[#1A1A1A] py-[66px]">
             <div>
               <p className=" text-[18px] font-semibold">Account Number</p>
               <p className=" text-[22px] font-bold">1015275089</p>
