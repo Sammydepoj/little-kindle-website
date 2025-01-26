@@ -35,7 +35,7 @@ const teamData = [
   {
     image: ibiloye,
     name: "Ibiloye Toluwanimi",
-    title: "Head Of Finance",
+    title: "Vice president, Finance",
     location: "Massachusetts, USA",
   },
   {
