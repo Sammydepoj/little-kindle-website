@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import ArrowIcon from "@/assets/icons/ArrowIcon";
 import CustomButton from "@/components/Button";
 import Navbar from "@/components/Navbar";
@@ -133,9 +133,9 @@ const Page = () => {
           onClick={toggleShowAll}
         >
           {showAll ? (
-            <CustomButton text="show less update" />
+            <CustomButton text="Show less update" scroll={true} />
           ) : (
-            <CustomButton text="show more update" />
+            <CustomButton text="Show more update" scroll={true} />
           )}
         </div>
       </div>

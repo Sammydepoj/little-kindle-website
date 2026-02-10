@@ -2,13 +2,17 @@ import Image from "next/image";
 import React from "react";
 import outreach from "@/assets/images/outreach.png";
 import bright from "@/assets/images/bright.webp";
+import CalendarIcon from "@/assets/icons/CalendarIcon";
 
 const Outreach = () => {
   return (
     <section className=" w-full bg-[#FCFCFD] border-[4px] border-[#F7F7F8] p-[40px] rounded-[16px] gap-[30px] flex flex-col items-center">
-      <div className=" flex flex-col gap-[30px] items-center max-w-[700px]">
-        <Image alt="bright" src={bright} className=" " />
-        {/* <Image alt="outreach" src={next} /> */}
+      <div className=" flex flex-col gap-[30px] items-center max-w-[700px] relative">
+        <Image alt="bright" src={bright} className=" rounded-2xl" />
+        <div className="rounded-3xl bg-white py-3 px-4 absolute bottom-4 left-4 flex items-center gap-3">
+          <CalendarIcon />
+          May 2025
+        </div>
       </div>
       <div className=" flex flex-col gap-[10px]">
         <h1 className=" font-semibold text-[#1A1A1A] text-[20px]">
