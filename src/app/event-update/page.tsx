@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import ArrowIcon from "@/assets/icons/ArrowIcon";
 import CustomButton from "@/components/Button";
 import Navbar from "@/components/Navbar";
@@ -13,8 +13,15 @@ import bag from "@/assets/images/bag.png";
 import UpdateCard from "@/components/UpdateCard";
 import Donate from "@/components/Donate";
 import Footer from "@/components/Footer";
+import outreach from "@/assets/images/outreach.png";
 
 const Updates = [
+  {
+    image: outreach,
+    event: "Ebutte Meta Outreach",
+    details:
+      "Join us for a memorable Charity Gala Night to raise funds for our Education Support program. Enjoy an evening of entertainment, auctions, and inspiring stories of transformed lives.",
+  },
   {
     image: bag,
     event: "Bag Distribution At Ebute Meta",
@@ -126,9 +133,9 @@ const Page = () => {
           onClick={toggleShowAll}
         >
           {showAll ? (
-            <CustomButton text="show less update" />
+            <CustomButton text="Show less update" scroll={true} />
           ) : (
-            <CustomButton text="show more update" />
+            <CustomButton text="Show more update" scroll={true} />
           )}
         </div>
       </div>
