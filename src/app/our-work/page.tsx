@@ -3,9 +3,9 @@ import React from "react";
 import ArrowIcon from "@/assets/icons/ArrowIcon";
 import CustomButton from "@/components/Button";
 import CardWithImage from "@/components/CardWithImage";
-import supply from "@/assets/images/supply.png";
-import feeding from "@/assets/images/feeding.png";
-import volunteer from "@/assets/images/volunteer.png";
+import supply from "@/assets/images/supply.jpg";
+import feeding from "@/assets/images/feeding.jpg";
+import volunteer from "@/assets/images/volunteer.jpg";
 import Donate from "@/components/Donate";
 import Footer from "@/components/Footer";
 const Page = () => {

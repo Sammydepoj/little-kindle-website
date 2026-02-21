@@ -7,7 +7,7 @@ import React from "react";
 import blackboy from "@/assets/images/blackBoy.png";
 import blackGirls from "@/assets/images/blackGirls.png";
 import HeroCard from "@/components/HeroCard";
-import aboutImg from "@/assets/images/aboutImg.png";
+import aboutImg from "@/assets/images/aboutImg.jpg";
 import Goal from "@/components/Goal";
 import ShineMark from "@/assets/icons/ShineMark";
 import TeamCard from "@/components/TeamCard";
