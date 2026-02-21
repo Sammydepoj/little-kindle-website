@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import bright from "@/assets/images/bright.webp";
+import bright from "@/assets/images/bright.jpg";
 import CalendarIcon from "@/assets/icons/CalendarIcon";
 import img1 from "@/assets/images/bright-beginnings/img1.jpg";
 import img2 from "@/assets/images/bright-beginnings/img2.jpg";

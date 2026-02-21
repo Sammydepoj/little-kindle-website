@@ -4,56 +4,56 @@ import ArrowIcon from "@/assets/icons/ArrowIcon";
 import CustomButton from "@/components/Button";
 import Navbar from "@/components/Navbar";
 import Outreach from "@/components/Outreach";
-import luxury from "@/assets/images/luxury.png";
-import light from "@/assets/images/light.png";
-import sweet from "@/assets/images/sweet.png";
-import mall from "@/assets/images/mall.png";
-import special from "@/assets/images/special.png";
-import bag from "@/assets/images/bag.png";
+import luxury from "@/assets/images/luxury.jpg";
+import light from "@/assets/images/light.jpg";
+import sweet from "@/assets/images/sweet.jpg";
+import mall from "@/assets/images/mall.jpg";
+import special from "@/assets/images/special.jpg";
+import bag from "@/assets/images/bag.jpg";
 import UpdateCard from "@/components/UpdateCard";
 import Donate from "@/components/Donate";
 import Footer from "@/components/Footer";
-import outreach from "@/assets/images/outreach.png";
+import outreach from "@/assets/images/outreach.jpg";
 
 const Updates = [
   {
-    image: outreach,
+    images: [outreach, outreach, outreach],
     event: "Ebutte Meta Outreach",
     details:
       "Join us for a memorable Charity Gala Night to raise funds for our Education Support program. Enjoy an evening of entertainment, auctions, and inspiring stories of transformed lives.",
   },
   {
-    image: bag,
+    images: [bag, bag, bag],
     event: "Bag Distribution At Ebute Meta",
     details:
       "We are delighted to announce the successful inauguration of a new school building in Greenfield Village. This state-of-the-art facility will provide a conducive learning environment for over 300 children, empowering them with quality education and a brighter future.",
   },
   {
-    image: luxury,
+    images: [luxury, luxury, luxury],
     event: "Luxury For Little Charity Sales",
     details:
       "We are delighted to announce the successful inauguration of a new school building in Greenfield Village. This state-of-the-art facility will provide a conducive learning environment for over 300 children, empowering them with quality education and a brighter future.",
   },
   {
-    image: special,
+    images: [special, special, special],
     event: "A Special Drive Outreach",
     details:
       "We are delighted to announce the successful inauguration of a new school building in Greenfield Village. This state-of-the-art facility will provide a conducive learning environment for over 300 children, empowering them with quality education and a brighter future.",
   },
   {
-    image: light,
+    images: [light, light, light],
     event: "Light It Up Outreach",
     details:
       "We are delighted to announce the successful inauguration of a new school building in Greenfield Village. This state-of-the-art facility will provide a conducive learning environment for over 300 children, empowering them with quality education and a brighter future.",
   },
   {
-    image: sweet,
+    images: [sweet, sweet, sweet],
     event: "Sweet November",
     details:
       "We are delighted to announce the successful inauguration of a new school building in Greenfield Village. This state-of-the-art facility will provide a conducive learning environment for over 300 children, empowering them with quality education and a brighter future.",
   },
   {
-    image: mall,
+    images: [mall, mall, mall],
     event: "Mall Outreach",
     details:
       "We are delighted to announce the successful inauguration of a new school building in Greenfield Village. This state-of-the-art facility will provide a conducive learning environment for over 300 children, empowering them with quality education and a brighter future.",
@@ -122,7 +122,7 @@ const Page = () => {
           {displayedUpdates.map((item, index) => (
             <UpdateCard
               key={index}
-              image={item.image}
+              images={item.images}
               event={item.event}
               details={item.details}
             />

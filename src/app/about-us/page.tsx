@@ -19,7 +19,7 @@ import ibiloye from "../../assets/images/ibiloye.png";
 import mary from "../../assets/images/mary.png";
 import ogun from "../../assets/images/ogun.png";
 import oluwatoyin from "../../assets/images/oluwatoyin.png";
-import samuel from "../../assets/images/samuel.png";
+import samuel from "../../assets/images/sam.png";
 import yewande from "../../assets/images/yewande.jpg";
 import michael from "../../assets/images/michael.jpg";
 import Donate from "@/components/Donate";
