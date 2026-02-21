@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../../assets/images/HeroImg.png";
+import HeroImage from "../../assets/images/HeroImg.jpg";
 import Image from "next/image";
 import ArrowIcon from "@/assets/icons/ArrowIcon";
 import CountHolder from "../CountHolder";
@@ -10,8 +10,6 @@ import ShineMark from "@/assets/icons/ShineMark";
 import Card from "../Card";
 import Donate from "../Donate";
 import CustomButton from "../Button";
-import CardWithImage from "../CardWithImage";
-import HeroCard from "../HeroCard";
 import Counter from "../Counter";
 
 const countData = [
@@ -38,18 +36,22 @@ const Hero = () => {
           Igniting the Spark of Education for Africa&apos;s Children
         </h1>
         <p className="text-base text-[#4C4C4D] font-normal text-center my-3 md:my-8">
-          Empowering children in underserved communities in Africa through education. Since
-          2014, Little Kindles Africa has reached over 3,000 children in Lagos,
-          Oyo, and Ogun States. Join us in our mission to provide essential
-          educational resources and support. Together, we can create a brighter
-          future for every child.
+          Empowering children in underserved communities in Africa through
+          education. Since 2014, Little Kindles Africa has reached over 3,000
+          children in Lagos, Oyo, and Ogun States. Join us in our mission to
+          provide essential educational resources and support. Together, we can
+          create a brighter future for every child.
         </p>
         <div className="mx-auto flex items-center flex-wrap gap-8 md:w-max w-full justify-center">
           <CustomButton
             text="Volunteer with us"
             target="_blank"
-            icon={<ArrowIcon stroke="#3A5774" />}
-            className="!text-[#3A5774] !bg-[#FFFFFF]"
+            icon={
+              <span className="p-2">
+                <ArrowIcon stroke="#3A5774" />
+              </span>
+            }
+            className="!p-2 !text-[#3A5774] !bg-[#FFFFFF]"
             href="https://bit.ly/LKAVolunteer"
           />
           <CustomButton
@@ -96,9 +98,17 @@ const Hero = () => {
 
         <p className="text-[#1A1A1A] font-semibold">Every Child is Special</p>
       </div>
-      <div className="flex gap-6 my-8 flex-wrap md:flex-nowrap w-full justify-center">
-        <Image src={blackBoy} alt="image of a an african black boy" />
-        <div className="bg-[#F1F1F3] p-2 md:p-6 rounded-2xl grid">
+      <div className="flex gap-6 my-8 flex-wrap md:flex-nowrap w-full justify-center items-stretch">
+        <div className="relative w-full md:w-[40%] md:min-w-[280px] aspect-[3/4] md:aspect-auto rounded-2xl overflow-hidden shrink-0">
+          <Image
+            src={blackBoy}
+            alt="image of a an african black boy"
+            fill
+            className="object-contain rounded-2xl"
+            sizes="(max-width: 768px) 100vw, 40vw"
+          />
+        </div>
+        <div className="bg-[#F1F1F3] p-2 md:p-6 rounded-2xl grid w-full">
           <div className="flex items-center justify-between flex-wrap gap-4 my-4">
             <span className="flex items-center gap-3">
               <ShineMark />
@@ -124,8 +134,8 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="flex gap-6 my-8 flex-wrap md:flex-nowrap w-full justify-center">
-        <div className="bg-[#F1F1F3] p-2 md:p-6 rounded-2xl grid">
+      <div className="flex gap-6 my-8 flex-wrap md:flex-nowrap w-full justify-center items-stretch">
+        <div className="bg-[#F1F1F3] p-2 md:p-6 rounded-2xl grid w-full">
           <div className="flex items-center justify-between flex-wrap gap-4 my-4">
             <span className="flex items-center gap-3">
               <ShineMark />
@@ -149,7 +159,16 @@ const Hero = () => {
             needs.
           </p>
         </div>
-        <Image src={blackGirls} alt="image of some african girls" />
+        <div className="relative w-full md:w-[40%] md:min-w-[280px] aspect-[3/4] md:aspect-auto rounded-2xl overflow-hidden shrink-0">
+          <Image
+            src={blackGirls}
+            alt="image of some african girls"
+            fill
+            priority
+            className="object-contain rounded-2xl"
+            sizes="(max-width: 768px) 100vw, 40vw"
+          />
+        </div>
       </div>
       <div className="my-20">
         <h2 className="text-[#1A1A1A] my-4 font-semibold text-2xl md:text-4xl mx-auto text-center md:w-max">
