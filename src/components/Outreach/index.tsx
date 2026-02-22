@@ -11,7 +11,24 @@ import img4 from "@/assets/images/bright-beginnings/img4.jpg";
 import img5 from "@/assets/images/bright-beginnings/img5.jpg";
 import img6 from "@/assets/images/bright-beginnings/img6.jpg";
 import img7 from "@/assets/images/bright-beginnings/img7.jpg";
-const carouselImages = [bright, img1, img2, img3, img4, img5, img6, img7];
+import img8 from "@/assets/images/bright-beginnings/img8.jpg";
+import img9 from "@/assets/images/bright-beginnings/img9.jpg";
+import img10 from "@/assets/images/bright-beginnings/img10.jpg";
+import img11 from "@/assets/images/bright-beginnings/img11.jpg";
+const carouselImages = [
+  bright,
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+  img11,
+];
 
 const slideVariants = {
   enter: (direction: number) => ({
